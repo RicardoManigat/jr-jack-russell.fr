@@ -1,71 +1,130 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>Jack Russell</title>
-
-	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700,300,100' rel='stylesheet' type='text/css'>
-    <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
-    <link href="css/half-slider.css" rel="stylesheet">
-	<style>
-	#bandeau-creative{
-		font-family: 'Montserrat', sans-serif;
-		font-size:22px;
-		font-weight:bold;
-		text-align:center;
-		color:white;
-		background-color:black;
-	}
-	.jr-grid{
-		font-family: 'Montserrat', sans-serif;
-		font-size:22px;
-		font-weight:bold;
-		text-align:center;
-		text-transform:uppercase;
-		height:250px;
-		line-height:250px;
-	}
-	.bloc{
-		display:inline-block;
-		background-color:pink;
-		vertical-align: middle;
-		float: none;
-	}
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>JackRussell</title>
+		<meta name="description" content="Dynamic Grid with CSS Transitions inspired by the Google Trends Grid Visualization" />
+		<meta name="keywords" content="google trends, dynamic grid, css transitions, javascript, responsive, fluid, layout" />
+		<meta name="author" content="Codrops" />
+		<style>
+		@font-face{
+			font-family:JackRussell;
+			src: url(fonts/Montserrat-Regular.otf);
+		}
+		@font-face{
+			font-family:JackRussell;
+			src: url(fonts/Montserrat-Bold.otf);
+			font-weight:bold;
+		}
+		@font-face{
+			font-family:JackRussell;
+			src: url(fonts/Montserrat-ExtraBold.otf);
+			font-weight:bolder;
+		}
+		@font-face{
+			font-family:JackRussellBlack;
+			src:url(fonts/Montserrat-Black.otf);
+		}
 	</style>
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-</head>
-
-<body>
-
-    <!-- Navigation -->
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="container">
-            <div class="navbar-header">
-                <a class="navbar-brand" href="#"><img src="img/logo.png"></a>
-            </div>
-        </div>
-        <!-- /.container -->
-    </nav>
-
-    <!-- Half Page Image Background Carousel Header -->
-    <header id="myCarousel" class="carousel slide">
+		<link rel="shortcut icon" href="../favicon.ico"> 
+		<link rel="stylesheet" type="text/css" href="css/default.css" />
+		<link rel="stylesheet" type="text/css" href="css/footer.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<script src="js/modernizr.custom.js"></script>
+		<link href="css/bootstrap.css" rel="stylesheet">
+		<link href="css/half-slider.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/style_common.css" />
+        <link rel="stylesheet" type="text/css" href="css/style6.css" />
+	<style>
+		.full-size{
+			width:100% !important;
+			height:100% !important;
+		}
+		.third-size{
+			width:33.33333% !important;
+			height:33.33333% !important;
+		}
+		.child{
+			text-transform:uppercase;
+			text-align:center;
+			display: table-cell;
+			vertical-align: middle;
+			z-index:10;
+			width:100%;
+			height:100%;
+		}
+		.jr-grid{
+			font-size:22px;
+			font-family:'JackRussellBlack';
+			display: table;
+		}
+		.carousel-control.left, .carousel-control.right {
+		  background: none !important;
+		  filter: progid: none !important;
+		  outline: 0;
+		}
+		.carousel .carousel-control {
+		  visibility: hidden;
+		}
+		.bl-white{
+		background-color:white;
+		color:black;
+	}
+		.bl-black{
+			background-color:black;
+			color:white;
+		}
+		.child1{
+			z-index:1;
+			width:100%;
+			height:100%;
+			text-transform:uppercase;
+			text-align:center;
+			display: table-cell;
+			position:absolute;
+			top: 50%; 
+			transform: translateY(-50%);
+			
+		}
+		.child-title{
+			
+		}
+		
+	</style>
+	</head>
+	<body class="cbp-spmenu-push">
+		<nav class="cbp-spmenu cbp-spmenu-horizontal cbp-spmenu-bottom" id="cbp-spmenu-s4">
+			<h3>Menu</h3>
+			<a href="#">Celery seakale</a>
+			<a href="#">Dulse daikon</a>
+			<a href="#">Zucchini garlic</a>
+			<a href="#">Catsear azuki bean</a>
+			<a href="#">Dandelion bunya</a>
+			<a href="#">Rutabaga</a>
+			<a href="#">Celery seakale</a>
+			<a href="#">Dulse daikon</a>
+			<a href="#">Zucchini garlic</a>
+			<a href="#">Catsear azuki bean</a>
+			<a href="#">Dandelion bunya</a>
+			<a href="#">Rutabaga</a>
+		</nav>
+		<div class="container-fluid demo-3">
+			<div id="gt-grid-selector" class="gt-grid-control">
+				<span>
+				<img alt="Jack Russell" class="logo" src="img/logo.png">
+				</span>
+				<div class="gt-grid-select">
+					<div id="carousel"></div><div></div><div></div><div></div><div></div>
+					<div></div><div></div><div></div><div></div><div></div>
+					<div></div><div></div><div id="mozaic"></div><div></div><div></div>
+					<div></div><div></div><div></div><div></div><div></div>
+					<div></div><div></div><div></div><div></div><div></div>
+				</div>
+			</div>
+			<div id="gt-grid" class="gt-grid">
+				<div id="grid-first-element"><header id="myCarousel" class="carousel slide">
         <!-- Indicators -->
         <ol class="carousel-indicators">
             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -77,9 +136,9 @@
         <div class="carousel-inner">
             <div class="item active">
                 <!-- Set the first background image using inline CSS below. -->
-                <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide One');"></div>
-                <div class="carousel-caption">
-                    <h2>Caption 1</h2>
+                <div class="fill" style="background-image:url('img/slide1.png');"></div>
+                <div class="carousel-caption" id="slide1">
+                    <h2>L'agence<br> Jack Russell<br> s'installe &agrave; Paris</h2>
                 </div>
             </div>
             <div class="item">
@@ -90,8 +149,8 @@
                 </div>
             </div>
             <div class="item">
-                <!-- Set the third background image using inline CSS below. -->
                 <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide Three');"></div>
+                <!-- Set the third background image using inline CSS below. -->
                 <div class="carousel-caption">
                     <h2>Caption 3</h2>
                 </div>
@@ -106,41 +165,134 @@
             <span class="icon-next"></span>
         </a>
 
-    </header>
-	<div class="container-fluid">
-	<div class="col-md-12" id="bandeau-creative">CREATIVE EMAILS</div>
-	</div>
-	<div class="container-fluid">
-		<div class="col-md-4 jr-grid" style="background-color:black;">Qui raconte des histoires</div>
-		<div class="col-md-4 jr-grid" style="background-color:red;">Nous croyons en l'email</div>
-		<div class="col-md-4 jr-grid" style="background-color:yellow;">Qui offre des &eacute;xperiences</div>
-		<div class="col-md-4 jr-grid" style="background-color:green;">Qui se d&eacute;marque des concurrents</div>
-		<div class="col-md-4 jr-grid" style="background-color:purple;">Nous sommes Jack Russell</div>
-		<div class="col-md-4 jr-grid" style="background-color:black;">Qui combine les talents</div>
-		<div class="col-md-4 jr-grid" style="background-color:orange;">D&eacute;couvrez nos emails cr&eacute;atifs</div>
-		<div class="col-md-4 jr-grid" style="background-color:grey;">Qui &eacute;coute nos consommateurs</div>
-		<div class="col-md-4 jr-grid" style="background-color:red;">D&eacute;couvez nos r&eacute;f&eacute;rences</div>
-	</div>
-	<div class="container-fluid">
-	<div class="col-md-12" style="background-color:black;height:200px;">FOOTER</div>
-	</div>
-    <!-- Page Content -->
-    
-    <!-- /.container -->
+    </header></div>
+				<div class="jr-grid">
+					<div class="child bl-white">Nous Croyons en l'email</div>
+				</div>
+				<div class="jr-grid">
+					<div class="child">
+						
+						
+							Qui offre des &eacute;xp&eacute;riences
+							
+					</div>
+				</div>
+				<div>
+					dd
+				</div>
+				<div><h3>turnip maize</h3></div>
+				<div class="jr-grid">
+					<div class="child bl-black">Qui se d&eacute;marque des concurrents</div>
+				</div>
+				<div class="jr-grid">
+					<div class="child" style="background-color:#e55041;color:white;">Nous sommes Jack Russell</div>
+				</div>
+				<div class="jr-grid">
+					<div class="child bl-black">Qui combine les talents</div>
+				</div>
+				<div><h3>bunya nuts</h3></div>
+				<div><h3>celery</h3></div>
+				<div class="jr-grid view view-sixth">
+					<div class="child1">D&eacute;couvrez nos emails cr&eacute;atifs</div>
+					<div class="child">
+						<div class="mask">
+                        <h2>D&eacute;couvrez nos emails cr&eacute;atifs</h2>
+                        <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
+                        <a href="#" class="info">Read More</a>
+                    </div></div>
+				</div>
+				<div class="jr-grid">
+					<div class="child bl-white">Qui &eacute;coute nos consommateurs</div>
+				</div>
+				<div class="jr-grid">
+						<div class="child">D&eacute;couvrez nos r&eacute;f&eacute;rences</div>
+				</div>
+				<div><h3>mustard burdock</h3></div>
+				<div><h3>potato bush</h3></div>
+				<div><h3>catsear</h3></div>
+				<div><h3>water chestnut</h3></div>
+				<div><h3>bok choy</h3></div>
+				<div><h3>pea sprouts</h3></div>
+				<div><h3>gumbo parsley</h3></div>
+				<div><h3>bitterleaf</h3></div>
+				<div><h3>spinach rock</h3></div>
+				<div><h3>tigernut garlic</h3></div>
+				<div><h3>caulie</h3></div>
+				<div><h3>seakale</h3></div>
+			</div>
 
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-
-    <!-- Script to Activate the Carousel -->
-    <script>
-    $('.carousel').carousel({
-        interval: 5000 //changes the speed
-    })
-    </script>
-
-</body>
-
+		</div><!-- /container -->
+		<!-- jQuery -->
+		<script src="js/jquery.js"></script>
+		
+		<!-- Bootstrap Core JavaScript -->
+		<script src="js/bootstrap.min.js"></script>
+		<!-- classie.js by @desandro: https://github.com/desandro/classie -->
+		<script src="js/classie.js"></script>
+		<script src="js/gridSelector.js"></script>
+		<script src="js/grid.js"></script>
+		<script>
+			var position=0;
+			var menuBottom = document.getElementById( 'cbp-spmenu-s4' );
+			var body = body = document.body;
+			Grid.init( {
+				transition : true,
+				speed : 250,
+				delay: 5
+			} );
+			$('.carousel').carousel({
+				interval: 2000 //changes the speed
+			});
+			$('html').on ('mousewheel', function (e) {
+				var delta = e.originalEvent.wheelDelta;
+				
+				if (delta < 0) {
+					if(position==0){
+						$("#mozaic").click();
+						$.ajax({
+							url: 'grid-first-element.html',
+							dataType: 'html',
+							success: function(html) {
+								$("#grid-first-element").replaceWith(html);
+								$('#grid-first-element').addClass("third-size");
+								$(".logo").toggle();
+								position=1;
+							},
+							error : function(){
+								alert("erreur");
+							}
+						});
+					}else if(position==1){
+						classie.toggle( menuBottom, 'cbp-spmenu-open' );
+						classie.toggle( body, 'cbp-spmenu-push-totop' );
+						position=2;
+					}
+					
+				} else if (delta > 0) {
+					if(position==1){
+						$.ajax({
+							url: 'carousel.html',
+							dataType: 'html',
+							success: function(html) {
+								$("#grid-first-element").replaceWith(html);
+								$('#grid-first-element').addClass("full-size");
+								$(".logo").toggle();
+								position=0;
+							},
+							error : function(){
+								alert("erreur");
+							}
+						});
+						
+						$("#carousel").click();
+					}else if(position==2){
+						classie.toggle( menuBottom, 'cbp-spmenu-open' );
+						classie.toggle( body, 'cbp-spmenu-push-totop' );
+						position=1;
+					}
+					
+				}
+			});
+		</script>
+	</body>
 </html>
