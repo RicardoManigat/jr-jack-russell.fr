@@ -1,50 +1,68 @@
-/**
- * main.js
- * http://www.codrops.com
- *
- * Licensed under the MIT license.
- * http://www.opensource.org/licenses/mit-license.php
- * 
- * Copyright 2014, Codrops
- * http://www.codrops.com
- */
-(function() {
+﻿//GRID INITIALISATION
+Grid.init( {
+	transition : true,
+	speed : 250,
+	delay: 5
+} );
 
-	var bodyEl = document.body,
-		content = document.querySelector( '.content-wrap' ),
-		openbtn = document.getElementById( 'open-button' ),
-		closebtn = document.getElementById( 'close-button' ),
-		isOpen = false;
+//CREATION  DES VARIABLES 
+var position=0;
+var menuBottom = document.getElementById( 'cbp-spmenu-s4' );
+var body = body = document.body;
 
-	function init() {
-		initEvents();
-	}
+//INITIALISATION DU CAROUSSEL
+$('.carousel').carousel({
+	interval: 2000 //changes the speed
+});
 
-	function initEvents() {
-		openbtn.addEventListener( 'click', toggleMenu );
-		if( closebtn ) {
-			closebtn.addEventListener( 'click', toggleMenu );
+
+$('html').on ('mousewheel', function (e) {
+	var delta = e.originalEvent.wheelDelta;
+	
+	if (delta < 0) { //IF SCROLL DOWN
+		if(position==0){
+			$("#mozaic").click();
+			$.ajax({
+				url: 'grid-first-element.html',
+				dataType: 'html',
+				success: function(html) {
+					$("#grid-first-element").replaceWith(html);
+					$('#grid-first-element').addClass("third-size");
+					$(".logo").toggle();
+					
+				},
+				error : function(){
+					alert("erreur");
+				}
+			});
+		}else if(position==7){
+			classie.toggle( menuBottom, 'cbp-spmenu-open' );
+			classie.toggle( body, 'cbp-spmenu-push-totop' );
+			
 		}
-
-		// close the menu element if the target it´s not the menu element or one of its descendants..
-		content.addEventListener( 'click', function(ev) {
-			var target = ev.target;
-			if( isOpen && target !== openbtn ) {
-				toggleMenu();
-			}
-		} );
-	}
-
-	function toggleMenu() {
-		if( isOpen ) {
-			classie.remove( bodyEl, 'show-menu' );
+		position = position+1;
+	} else if (delta > 0) { //IF SCROLL UP
+		if(position==5){
+			$.ajax({
+				url: 'carousel.html',
+				dataType: 'html',
+				success: function(html) {
+					$("#grid-first-element").replaceWith(html);
+					$('#grid-first-element').addClass("full-size");
+					$(".logo").toggle();
+					
+				},
+				error : function(){
+					alert("erreur");
+				}
+			});
+			
+			$("#carousel").click();
+		}else if(position==7){
+			classie.toggle( menuBottom, 'cbp-spmenu-open' );
+			classie.toggle( body, 'cbp-spmenu-push-totop' );
+			
 		}
-		else {
-			classie.add( bodyEl, 'show-menu' );
-		}
-		isOpen = !isOpen;
+		position = position-1;
 	}
-
-	init();
-
-})();
+});

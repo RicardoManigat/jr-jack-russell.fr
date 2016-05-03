@@ -28,6 +28,7 @@
 			src:url(fonts/Montserrat-Black.otf);
 		}
 	</style>
+	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 		<link rel="shortcut icon" href="../favicon.ico"> 
 		<link rel="stylesheet" type="text/css" href="css/default.css" />
 		<link rel="stylesheet" type="text/css" href="css/footer.css" />
@@ -35,8 +36,7 @@
 		<script src="js/modernizr.custom.js"></script>
 		<link href="css/bootstrap.css" rel="stylesheet">
 		<link href="css/half-slider.css" rel="stylesheet">
-		<link rel="stylesheet" type="text/css" href="css/style_common.css" />
-        <link rel="stylesheet" type="text/css" href="css/style6.css" />
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
 	<style>
 		.full-size{
 			width:100% !important;
@@ -51,9 +51,12 @@
 			text-align:center;
 			display: table-cell;
 			vertical-align: middle;
-			z-index:10;
 			width:100%;
 			height:100%;
+			 -webkit-transition: all 1s ease-in-out;
+		  -moz-transition: all 1s ease-in-out;
+		  -o-transition: all 1s ease-in-out;
+		  transition: all 1s ease-in-out;
 		}
 		.jr-grid{
 			font-size:22px;
@@ -77,7 +80,7 @@
 			color:white;
 		}
 		.child1{
-			z-index:1;
+			z-index:2;
 			width:100%;
 			height:100%;
 			text-transform:uppercase;
@@ -88,21 +91,88 @@
 			transform: translateY(-50%);
 			
 		}
-		.child-title{
+		
+		
+		.description{
+			font-size:14px;
+			font-family: 'Roboto', sans-serif;
+			width:80%;
+			padding-top:15px;
+			display:none;
+		}
+		.fa{
+			display:none;
+		}
+		.grid-title{
+			-webkit-transition:transform 2s;
+			transition:transform 2s;
+		}
+		.child:hover .description,
+		.child:hover .fa,
+		.jr-grid:hover .description,
+		.jr-grid:hover .fa
+		{
+			display:block;
+		}
+		.child:hover{
+			background:black !important;
+			color;white;
+		}
+		.child:before{
+			-webkit-filter: blur(5px);
+		  -moz-filter: blur(5px);
+		  -o-filter: blur(5px);
+		  -ms-filter: blur(5px);
+		  filter: blur(5px);
+		}
+		#grid-first-element{
+			background: url(images/grid1.jpg); 
+			background-size: 100%;
+		}
+		#grid2{
 			
 		}
-		
+		#grid3{
+			background: url(images/grid3.jpg); 
+			background-size: 100%;
+		}
+		#grid4{
+		}
+		#grid5{
+		}
+		#grid6{
+		}
+		#grid7{
+			background: url(images/grid7.jpg); 
+			background-size: 100%;
+		}
+		#grid8{
+		}
+		#grid9{
+			background: url(images/grid9.jpg); 
+			background-size: 100%;
+		}
+		#slide1{
+			text-align:left;
+			color:black;
+			font-style:'JackRussell';
+			top:35%;
+			font-style:bold;
+		}
+		#slide1 h2{
+			font-size:90px;
+		}
 	</style>
 	</head>
 	<body class="cbp-spmenu-push">
 		<nav class="cbp-spmenu cbp-spmenu-horizontal cbp-spmenu-bottom" id="cbp-spmenu-s4">
-			<h3>Menu</h3>
+			<h3>JackRussell</h3>
 			<a href="#">Celery seakale</a>
-			<a href="#">Dulse daikon</a>
+			<a href="#">MONTREAL - PARIS</a>
 			<a href="#">Zucchini garlic</a>
 			<a href="#">Catsear azuki bean</a>
 			<a href="#">Dandelion bunya</a>
-			<a href="#">Rutabaga</a>
+			<a href="#">REJOINDRE L'&Eacute;QUIPE</a>
 			<a href="#">Celery seakale</a>
 			<a href="#">Dulse daikon</a>
 			<a href="#">Zucchini garlic</a>
@@ -166,14 +236,18 @@
         </a>
 
     </header></div>
-				<div class="jr-grid">
-					<div class="child bl-white">Nous Croyons en l'email</div>
+				<div class="jr-grid" id="grid2" style="background:white;">
+					<div class="child" id="child2">
+					<center>
+							<span class="grid-title">Nous Croyons en l'email<span>
+					</div>
 				</div>
-				<div class="jr-grid">
+				<div class="jr-grid" id="grid3">
 					<div class="child">
-						
-						
-							Qui offre des &eacute;xp&eacute;riences
+							<center>
+							<span class="grid-title">Qui offre des &eacute;xp&eacute;riences<span>
+							<p class="description">L'EMAIL EST EN TRAIN DE FAIRE SA R&Eacute;VOLUTION. LES PRATIQUES &Eacute;VOLUENT A VUE D'OEIL ET IL EST TEMPS DE FONCER.</p>
+							<i class="fa fa-plus fa-4x"></i></center>
 							
 					</div>
 				</div>
@@ -181,31 +255,54 @@
 					dd
 				</div>
 				<div><h3>turnip maize</h3></div>
-				<div class="jr-grid">
-					<div class="child bl-black">Qui se d&eacute;marque des concurrents</div>
+				<div class="jr-grid" id="grid4">
+					<div class="child bl-black" id="title4">
+						
+						<center>
+							<span class="grid-title">Qui se d&eacute;marque des concurrents<span>
+							<p class="description">L'EMAIL EST EN TRAIN DE FAIRE SA R&Eacute;VOLUTION. LES PRATIQUES &Eacute;VOLUENT A VUE D'OEIL ET IL EST TEMPS DE FONCER.</p>
+							<i class="fa fa-plus fa-4x"></i></center>
+					</div>
 				</div>
-				<div class="jr-grid">
-					<div class="child" style="background-color:#e55041;color:white;">Nous sommes Jack Russell</div>
+				<div class="jr-grid" id="grid5">
+					<div class="child" style="background-color:#e55041;color:white;">
+					<center>
+							<span class="grid-title">Nous sommes Jack Russell<span>
+							<p class="description">L'EMAIL EST EN TRAIN DE FAIRE SA R&Eacute;VOLUTION. LES PRATIQUES &Eacute;VOLUENT A VUE D'OEIL ET IL EST TEMPS DE FONCER.</p>
+							<i class="fa fa-plus fa-4x"></i></center></div>
 				</div>
-				<div class="jr-grid">
-					<div class="child bl-black">Qui combine les talents</div>
+				<div class="jr-grid" id="grid6">
+					<div class="child bl-black">
+					<center>
+							<span class="grid-title">Qui combine les talents<span>
+							<p class="description">L'EMAIL EST EN TRAIN DE FAIRE SA R&Eacute;VOLUTION. LES PRATIQUES &Eacute;VOLUENT A VUE D'OEIL ET IL EST TEMPS DE FONCER.</p>
+							<i class="fa fa-plus fa-4x"></i></center></div>
 				</div>
 				<div><h3>bunya nuts</h3></div>
 				<div><h3>celery</h3></div>
-				<div class="jr-grid view view-sixth">
-					<div class="child1">D&eacute;couvrez nos emails cr&eacute;atifs</div>
-					<div class="child">
-						<div class="mask">
-                        <h2>D&eacute;couvrez nos emails cr&eacute;atifs</h2>
-                        <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
-                        <a href="#" class="info">Read More</a>
-                    </div></div>
+				<div class="jr-grid view view-sixth" id="grid7">
+					<div class="child" id="title7">
+					<center>
+							<span class="grid-title">D&eacute;couvrez nos emails cr&eacute;atifs<span>
+							<p class="description">L'EMAIL EST EN TRAIN DE FAIRE SA R&Eacute;VOLUTION. LES PRATIQUES &Eacute;VOLUENT A VUE D'OEIL ET IL EST TEMPS DE FONCER.</p>
+							<i class="fa fa-plus fa-4x"></i></center>
+					</div>
 				</div>
-				<div class="jr-grid">
-					<div class="child bl-white">Qui &eacute;coute nos consommateurs</div>
+				<div class="jr-grid" id="grid8">
+					<div class="child bl-white">
+					<center>
+							<span class="grid-title">Qui &eacute;coute nos consommateurs<span>
+							<p class="description">L'EMAIL EST EN TRAIN DE FAIRE SA R&Eacute;VOLUTION. LES PRATIQUES &Eacute;VOLUENT A VUE D'OEIL ET IL EST TEMPS DE FONCER.</p>
+							<i class="fa fa-plus fa-4x"></i></center>
+					</div>
 				</div>
-				<div class="jr-grid">
-						<div class="child">D&eacute;couvrez nos r&eacute;f&eacute;rences</div>
+				<div class="jr-grid" id="grid9">
+						<div class="child" id="title9">
+						<center>
+							<span class="grid-title">D&eacute;couvrez nos r&eacute;f&eacute;rences<span>
+							<p class="description">L'EMAIL EST EN TRAIN DE FAIRE SA R&Eacute;VOLUTION. LES PRATIQUES &Eacute;VOLUENT A VUE D'OEIL ET IL EST TEMPS DE FONCER.</p>
+							<i class="fa fa-plus fa-4x"></i></center>
+						</div>
 				</div>
 				<div><h3>mustard burdock</h3></div>
 				<div><h3>potato bush</h3></div>
@@ -231,68 +328,9 @@
 		<script src="js/classie.js"></script>
 		<script src="js/gridSelector.js"></script>
 		<script src="js/grid.js"></script>
+		<script src="js/main.js"></script>
 		<script>
-			var position=0;
-			var menuBottom = document.getElementById( 'cbp-spmenu-s4' );
-			var body = body = document.body;
-			Grid.init( {
-				transition : true,
-				speed : 250,
-				delay: 5
-			} );
-			$('.carousel').carousel({
-				interval: 2000 //changes the speed
-			});
-			$('html').on ('mousewheel', function (e) {
-				var delta = e.originalEvent.wheelDelta;
-				
-				if (delta < 0) {
-					if(position==0){
-						$("#mozaic").click();
-						$.ajax({
-							url: 'grid-first-element.html',
-							dataType: 'html',
-							success: function(html) {
-								$("#grid-first-element").replaceWith(html);
-								$('#grid-first-element').addClass("third-size");
-								$(".logo").toggle();
-								position=1;
-							},
-							error : function(){
-								alert("erreur");
-							}
-						});
-					}else if(position==1){
-						classie.toggle( menuBottom, 'cbp-spmenu-open' );
-						classie.toggle( body, 'cbp-spmenu-push-totop' );
-						position=2;
-					}
-					
-				} else if (delta > 0) {
-					if(position==1){
-						$.ajax({
-							url: 'carousel.html',
-							dataType: 'html',
-							success: function(html) {
-								$("#grid-first-element").replaceWith(html);
-								$('#grid-first-element').addClass("full-size");
-								$(".logo").toggle();
-								position=0;
-							},
-							error : function(){
-								alert("erreur");
-							}
-						});
-						
-						$("#carousel").click();
-					}else if(position==2){
-						classie.toggle( menuBottom, 'cbp-spmenu-open' );
-						classie.toggle( body, 'cbp-spmenu-push-totop' );
-						position=1;
-					}
-					
-				}
-			});
 		</script>
+		
 	</body>
 </html>
