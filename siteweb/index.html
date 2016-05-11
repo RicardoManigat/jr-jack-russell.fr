@@ -1,0 +1,1039 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Accueil - Jack Russell</title>
+	<style>
+		@font-face{
+			font-family:JackRussell;
+			src: url(fonts/Montserrat-Regular.otf);
+		}
+		@font-face{
+			font-family:JackRussell;
+			src: url(fonts/Montserrat-Bold.otf);
+			font-weight:bold;
+		}
+		@font-face{
+			font-family:JackRussell;
+			src: url(fonts/Montserrat-ExtraBold.otf);
+			font-weight:bolder;
+		}
+		@font-face{
+			font-family:JackRussellBlack;
+			src:url(fonts/Montserrat-Black.otf);
+		}
+		@font-face{
+			font-family:JackRussellLite;
+			src:url(fonts/Montserrat-Light.otf);
+		}
+	</style>
+	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/animate.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/morphext.css">
+    <!-- Custom CSS -->
+    <link href="css/full-slider.css" rel="stylesheet">
+	<style>
+		html{
+		width:100%;
+		}
+		body{
+			overflow-x: hidden;
+			left:0;
+			right:0;
+		}
+		.right.carousel-control, .left.carousel-control {
+			opacity: 0;
+			filter:alpha(opacity=0); /* IE support */
+		}
+		.grid{
+			text-align:center;
+			min-height:200px;
+			position:relative;
+			text-align:center;
+			font-family:'JackRussellBlack',sans-serif;
+			font-size:24px;
+			font-size:2.2vw;
+		}
+		.grid-content{
+			text-align:center;
+			min-height:200px;
+			position:relative;
+			text-align:center;
+			font-family:'JackRussellBlack',sans-serif;
+			font-size:24px;
+			font-size:2.2vw;
+			height:auto;
+			padding:70px;
+		}
+		.grid-child{
+			position:absolute;
+			top:50%;
+			transform:translateY(-50%);
+			text-align:center;
+			width:100%;
+			 -webkit-transition: background-color 500ms ease-in;
+			-moz-transition: background-color 500ms ease-in;
+			-o-transition: background-color 500ms ease-in;
+			-ms-transition: background-color 500ms ease-in;
+			transition: background-color 500ms ease-in;
+			
+			
+		}
+		
+		.grid-image,
+		.grid-red,
+		.grid-black{
+			color:white;
+		}
+		.grid-red{
+			background:#e55041;
+		}
+		.grid-black{
+			background:black;
+		}
+		.grid-white{
+			color:black;
+			background:white;
+		}
+		.grid-image{
+			background-size:cover;
+			background-repeat: no-repeat;
+		}
+		#grid1{
+			background-image: url(img/grid1.png);
+		}
+		#grid3{
+			background-image: url(img/grid2.png);
+		}
+		#grid7{
+			background-image: url(img/grid3.png);
+		}
+		#grid9{
+			background-image: url(img/grid4.png);
+		}
+		 .navbar.transparent.navbar-inverse .navbar-inner {
+			background: rgba(0,0,0,0.4);
+		}
+		.creative{
+			position:fixed;
+			bottom:0;
+			z-index:1030;
+			text-align:center;
+			background:black;
+			color:white;
+			font-family:'JackRussellBlack',sans-serif;
+			font-size:22px;
+			font-size:1.8vw;
+			padding-top:5px;
+			padding-bottom:5px;
+		}
+        .get-down{
+            position:fixed;
+            bottom:50px;
+            z-index:1031;
+            text-align:center;
+            background:none;
+            padding-top:5px;
+            padding-bottom: 5px;
+        }
+        .get-down img{
+            cursor:pointer;
+        }
+		.grid-container,
+		.col-lg-4{
+			padding:0px;
+		}
+		
+		.footer{
+			background:black;
+			color:white;
+			min-height:220px;
+			text-alig:center;
+			padding-top:20px;
+		}
+		.footer-menu{
+			margin-top:20px;
+			list-style-type:none;
+			text-align:left;
+		}
+		.footer-menu li a{
+			text-decoration:none;
+			color:white;
+			font-family:'JackRussellLite', sans-serif;
+			font-size:12px;
+		}
+		.footer-menu li a b{
+			font-family:'JackRussell',sans-serif;
+			font-weight:bold;
+		}
+		#footer-title{
+			font-family:'JackRussell',sans-serif;
+			font-weight:bold;
+			font-size:12px;
+			margin-left:20px;
+		}
+		#pige-cta{
+			background:#e55041;
+			padding:10px;
+			margin-top:50px;
+		}
+		#pige-cta a{
+			text-decoration:none;
+			color:white;
+			font-family:'JackRussellLite', sans-serif;
+			font-size:13px;
+		}
+		 #pige-cta a b{
+			font-family:'JackRussell',sans-serif;
+			font-weight:bold;
+		 }
+		 .grid-image .grid-child:hover{
+			background-color:rgba(0,0,0,0.5);
+			height:100%;
+		 }
+        .grid-red .grid-child:hover,
+        .grid-black .grid-child:hover,
+        .grid-white .grid-child:hover{
+            height:100%;
+        }
+		 .grid-child .intro{
+			display:none;
+		 }
+		 .intro{
+			padding-left:35px;
+			padding-right:55px;
+			font-family:'JackRussellLite', sans-serif;
+			font-size:13px;
+			font-size:1.3vw;
+			position:absolute;
+			top:50%;
+			transform:translateY(-50%);
+			text-align:center;
+			width:100%;
+		}
+		.carousel{
+		}
+		.plus{
+			width:80px;
+			height:80px;
+			cursor:pointer;
+		}
+		.content{
+			font-family:'Roboto', sans-serif;
+			font-size:13px;
+			font-size:1.1vw;
+			height:100%;
+			color:white;
+			padding:60px;
+			text-align:left;
+			line-height:30px;
+			
+		}
+		.content ul{
+			margin-top:5px;
+		}
+		#grid-caption1,
+        #grid-caption2,
+        #grid-caption3,
+        #grid-caption9{
+			background:black;
+			height:auto;
+			border-bottom:2px white solid;
+			border-top:2px white solid;
+		}
+       
+		.just{
+			font-family:'Roboto', sans-serif;
+			font-size:13px;
+			font-size:1.2vw;
+			color:white;
+			text-align:justify;
+			
+		}
+		.caption-title{
+			color:white;
+			font-family:'JackRussellBlack',sans-serif;
+			font-size:24px;
+			font-size:2.1vw;
+		}
+		.caption-subtitle{
+			color:white;
+			font-family:'JackRussellLite', sans-serif;
+			font-size:17px;
+			font-size:1.6vw;
+			line-height:1.1 !important;
+			padding-bottom:25px;
+			padding-top:15px;
+		}
+        .caption-subtitle2{
+			color:white;
+			font-family:'JackRussellLite', sans-serif;
+			font-size:16px;
+			font-size:1.6vw;
+			line-height:1.3 !important;
+			padding-bottom:25px;
+			padding-top:15px;
+            padding-left:15px;
+            padding-right:15px;
+		}
+        
+        .caption-subtitle2 b{
+            font-family:'JackRussellBlack', sans-serif;
+        }
+        .p-title{
+            color:white;
+            text-align:left;
+        }
+		.sep{
+			width:80px;
+			height:5px;
+			color:white;
+			background-color:white;
+			margin-top:0px;
+			align:center;
+		}
+        .glyphicon-remove{
+            position:absolute;
+            color: white;
+            z-index:4;
+            top:10px;
+            right:35px;
+            cursor:pointer;
+        }
+        .carousel-title{
+            font-family:'JackRussellBlack', sans-serif;
+            font-size:5vw;
+            margin-bottom:15vw;
+            color:black;
+            text-shadow: 2px 1px 2px rgba(150, 150, 150, 1);
+            text-align:left;
+        }
+        .reference{
+            height:109px;   
+        }
+        .button--view {
+           
+            width: 3em;
+            height: 1.75em;
+            margin: 0 0 0 -1.5em;
+            -webkit-animation: pointDown 0.6s 0.6s ease-in infinite alternate forwards;
+            animation: pointDown 0.6s 0.6s ease-in infinite alternate forwards;
+            fill: #fff;
+        }
+        .button {
+            margin: 0;
+            padding: 0;
+            border: none;
+            background: none;
+            -webkit-appearance: button;
+            cursor: pointer;
+        }
+        @-webkit-keyframes pointDown {
+	from {
+		-webkit-transform: translate3d(0,-10px,0);
+		transform: translate3d(0,-10px,0);
+	}
+	to {
+		-webkit-transform: translate3d(0,0,0);
+		transform: translate3d(0,0,0);
+	}
+}
+
+@keyframes pointDown {
+	from {
+		-webkit-transform: translate3d(0,-10px,0);
+		transform: translate3d(0,-10px,0);
+	}
+	to {
+		-webkit-transform: translate3d(0,0,0);
+		transform: translate3d(0,0,0);
+	}
+}
+
+.button--view path {
+	-webkit-transition: fill 0.3s;
+	transition: fill 0.3s;
+	fill: inherit;
+}
+
+.button--view:hover,
+.button--view:focus {
+	outline: none;
+	fill: #e55041;
+}
+
+.button--load {
+	width: 7em;
+	color: #a3b0bd;
+}
+
+.button--load svg {
+	width: 2.5em;
+}
+
+        
+	</style>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar transparent navbar-fixed-top" role="navigation">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header" id="top">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+				<h2 class="brand brand-name navbar-left">
+                <a href="#">
+					<img class="hidden-xs" src="img/logo.png" alt="">
+				</a>
+				</h2>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+	<div class="container-fluid">
+    <div class="col-lg-12 get-down">
+        <button id="showgrid" class="button button--view" aria-label="Show me more">
+				<svg width="100%" height="100%" viewBox="0 0 310 177" preserveAspectRatio="xMidYMid meet">
+					<path fill="#FFFFFF" d="M159.875,174.481L306.945,27.41c2.93-2.929,2.93-7.678,0-10.606L292.803,2.661c-1.406-1.407-3.314-2.197-5.303-2.197c-1.989,0-3.896,0.79-5.303,2.197L154.572,130.287L26.946,2.661c-1.406-1.407-3.314-2.197-5.303-2.197c-1.989,0-3.897,0.79-5.303,2.197L2.197,16.804C0.733,18.269,0,20.188,0,22.107s0.732,3.839,2.197,5.303l147.071,147.071C152.197,177.411,156.945,177.411,159.875,174.481L159.875,174.481z"></path>
+				</svg>
+			</button>
+        <!--
+	   <img class="hidden-xs" src="img/arrow.gif" id="scroll-cta" alt="" width="80">
+        -->
+	</div>
+	<div class="col-lg-12 creative">
+	CREATIVE EMAILS
+	</div>
+        </div>
+    <!-- Full Page Image Background Carousel Header -->
+    <header id="myCarousel" class="carousel slide">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for Slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <!-- Set the first background image using inline CSS below. -->
+                <div class="fill" style="background-image:url('img/slide1.jpeg');"></div>
+                <div class="carousel-caption">
+                    <h2 class="carousel-title">L'AGENCE<br>JACK RUSSELL<br>S'INSTALLE &Agrave; PARIS</h2>
+                </div>
+            </div>
+            <div class="item">
+                <!-- Set the second background image using inline CSS below. -->
+                <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide Two');"></div>
+                <div class="carousel-caption">
+                    <h2 class="carousel-title">Caption 2</h2>
+                </div>
+            </div>
+            <div class="item">
+                <!-- Set the third background image using inline CSS below. -->
+                <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide Three');"></div>
+                <div class="carousel-caption">
+                    <h2 class="carousel-title">Caption 3</h2>
+                </div>
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="icon-prev"></span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="icon-next"></span>
+        </a>
+
+    </header>
+
+    <!-- Page Content -->
+    <div class="container-fluid grid-container">
+
+        <div class="row">
+            <div class="col-lg-4 grid grid-image" id="grid1">
+				<div class="grid-child">
+				<p class="title">QUI RACONTE<br>DES HISTOIRES</p>
+				<div class="intro">
+					Et si la cr&eacute;ativit&eacute; augmentait la performance des e-mails ?
+					<center><div id="grid1plus" class="plus"></div></center>
+				</div>
+				
+				</div>
+			</div>
+			  <div class="col-lg-4 grid grid-white" id="grid2">
+				<div class="grid-child">
+				<p class="title">NOUS CROYONS<br>EN L'EMAIL</p>
+				<div class="intro">C&apos;est la marque qui s&apos;exprime : l&apos;e-mail est un m&eacute;dia &agrave; forte dimension story telling.
+				<center><div id="grid2plus" class="plus"></div></center></div>
+				</div>
+			  </div>
+			  <div class="col-lg-4 grid grid-image" id="grid3">
+				<div class="grid-child">
+				<p class="title">QUI OFFRE DES<br>EXP&Eacute;RIENCES</p>
+				<div class="intro">L&apos;e-mail est en train de faire sa r&eacute;volution en termes de richesse d&apos;exp&eacute;rience consommateur
+				<center><div id="grid3plus" class="plus"></div></center></div>
+				</div>
+			  </div>
+        </div>
+		<div class="row" id="grid-caption1">
+			<div class="col-lg-12 grid-content">
+				<div class="col-md-5">
+					<hr class="sep">
+					<h2 class="caption-title"><span id="turntext">C&apos;EST LA MARQUE<br> QUI SE POSITIONNE,C&apos;EST LA MARQUE<br> QUI S&apos;EXPRIME, C&apos;EST LE COMMERCE QUI S&apos;EXPRIME</span></h2>
+					<p class="caption-subtitle">L’e-mail est un média<br><span id="typeit"></span></p>
+					<hr class="sep">
+				</div>
+				<div class="col-md-7">
+					<p class="just">Notre mission est de traiter les campagnes e-mails avec le m&ecirc;me soin, le m&ecirc;me s&eacute;rieux et le m&ecirc;me niveau de cr&eacute;ativit&eacute; que les campagnes de communication plus traditionnelles ou diffus&eacute;es sur des m&eacute;dias consid&eacute;r&eacute;s comme &eacute;tant plus prestigieux. Nous nous sommes fix&eacute;s comme ambition de redonner une vraie place &agrave; l&apos;e-mail dans la strat&eacute;gie de communication des marques en lui apportant toute la cr&eacute;ativit&eacute; qu&apos;il m&eacute;rite. Pour v&eacute;hiculer les valeurs de marque et g&eacute;n&eacute;rer une r&eacute;action de la part du consommateur.</p>
+				</div>
+                <span class="glyphicon glyphicon-remove" id="close-caption1" aria-hidden="true"></span>
+			</div>
+		</div>
+        <div class="row" id="grid-caption2">
+			<div class="col-lg-12 grid-content">
+				<div class="col-md-5">
+					<hr class="sep">
+					<p class="caption-subtitle2">Les consommateurs acc&egrave;dent &agrave; internet principalement via les r&eacute;seaux sociaux, les moteurs de recherche et leur boite e-mail. L’e-mail fait donc partie de notre quotidien et m&eacute;rite un <b>maximum d’attention.</b></p>
+                    <hr class="sep">
+				</div>
+				<div class="col-md-7">
+                    <h4 class="p-title">C'est pourquoi : </h4>
+					<p class="just">Nous croyons que l’e-mail est devenu pour les marques un des m&eacute;dias les plus personnels dans la relation avec leurs clients.<br>
+Nous croyons que des offres promotionnelles plus cibl&eacute;es, de la cr&eacute;ativit&eacute; et du contenu de qualit&eacute; redonneront de l’attrait au m&eacute;dia e-mail et renforceront la relation entre les marques et leurs clients.<br>
+Nous croyons enfin que la recherche de ROI &agrave; court terme ne doit pas se faire au d&eacute;triment des consommateurs et nous nous engageons donc &agrave; lutter contre les politiques d&apos;envois massives et indiff&eacute;renci&eacute;es qui polluent les boites e-mail jusqu’à l’&eacute;puisement.</p>
+				</div>
+                <span class="glyphicon glyphicon-remove" id="close-caption2" aria-hidden="true"></span>
+			</div>
+		</div>
+        <div class="row" id="grid-caption3">
+			<div class="col-lg-12 grid-content">
+				<div class="col-md-5">
+					<hr class="sep">
+					<p class="caption-subtitle2">Finis les e-mails statiques avec simplement un gros 10% de remise  et 0% de contenu. Les clients veulent &ecirc;tre <b>surpris et reconnus</b> par les marques.</p>
+					<hr class="sep">
+				</div>
+				<div class="col-md-7">
+					<p class="just">Avec les nouvelles possibilit&eacute;s offertes par la technologie associ&eacute;es &agrave; la ma&icirc;trise de la data, l&apos;e-mail devient contextuel, interactif, et personnalis&eacute;. La communication s&apos;adapte en temps r&eacute;el &agrave; l&apos;activit&eacute; du client et gagne en efficacit&eacute;. Chaque campagne d&eacute;livre des donn&eacute;es pr&eacute;cieuses qui permettent de mesurer pr&eacute;cis&eacute;ment l&apos;efficacit&eacute; et d’apporter de plus en plus de valeur à la conversation qui se construit avec les consommateurs.</p>
+				</div>
+                <span class="glyphicon glyphicon-remove" id="close-caption3" aria-hidden="true"></span>
+			</div>
+		</div>
+		<div class="row">
+              <div class="col-lg-4 grid grid-black" id="grid4">
+				<div class="grid-child">
+				<p class="title">QUI SE D&Eacute;MARQUE<br>DES CONCURRENTS</p>
+				<div class="intro">Pour r&eacute;aliser des e-mails cr&eacute;atifs qui ont un r&eacute;el impact aupr&eagrave;s des consommateurs, nous avons d&eacute;velopp&eacute; un outil de pige un unique.
+				<center><div id="grid4plus" class="plus"></div></center></div>
+				</div>
+			  </div>
+			  <div class="col-lg-4 grid grid-red" id="grid5" align="center">
+				<div class="grid-child">
+				<p class="title">NOUS SOMMES<br>JACK RUSSELL</p>
+				<div class="intro">Vos e-mails m&eacute;ritent une agence.
+				<center><div id="grid5plus" class="plus"></div></center></div>
+				</div>
+			  </div>
+			  <div class="col-lg-4 grid grid-black" id="grid6">
+				<div class="grid-child">
+				<p class="title">QUI COMBINE<br>LES TALENTS</p>
+				<div class="intro">Une agence de communication &agrave; taille humaine présente en Am&eacute;rique du Nord et en Europe.
+				<center><div id="grid6plus" class="plus"></div></center></div>
+				</div>
+			  </div>
+        </div>
+        <div class="row" id="grid-caption9">
+			<div class="col-lg-12 grid-content">
+				<div class="col-md-3 reference">
+					<img src="img/keurig.png" class="brand-ref">
+				</div>
+                <div class="col-md-3 reference">
+					<img src="img/husqvarna.png" class="brand-ref">
+				</div>
+                <div class="col-md-3 reference">
+					<img src="img/mercedes.png" class="brand-ref">
+				</div>
+                <div class="col-md-3 reference">
+					<img src="img/videotron.png" class="brand-ref">
+				</div>
+                <span class="glyphicon glyphicon-remove" id="close-caption9" aria-hidden="true"></span>
+			</div>
+		</div>
+		<div class="row">
+              <div class="col-lg-4 grid grid-image" id="grid7">
+				<div class="grid-child">
+				<p class="title">D&Eacute;COUVREZ NOS<br>EMAILS CR&Eacute;ATIFS</p>
+				<div class="intro">Prenez quelques secondes pour d&eacute;couvrir comment l&apos;e-mail peut devenir un m&eacute;dia cr&eacute;atif et encore plus efficace
+				<center><div id="grid7plus" class="plus"></div></center></div>
+				</div>
+			  </div>
+			  <div class="col-lg-4 grid grid-white" id="grid8">
+				<div class="grid-child">
+					<p class="title">QUI &Eacute;COUTE LES<br>CONSOMMATEURS</p>
+					<div class="intro">En partenariat avec M&eacute;diam&eacute;trie, Jack Russell a cr&eacute;&eacute; le 1er score d&apos;impact de l&apos;e-mailing. 
+					<center><div id="grid8plus" class="plus"></div></center></div>
+				</div>
+			  </div>
+			  <div class="col-lg-4 grid grid-image" id="grid9">
+				<div class="grid-child">
+				<p class="title">D&Eacute;COUVREZ<br>NOS R&Eacute;F&Eacute;RENCES</p>
+				<div class="intro">D&eacute;couvrez nos principaux clients &agrave; Montr&eacute;al et nos premiers clients en France.
+				<center><div id="grid9plus" class="plus"></div></center></div>
+				</div>
+			</div>
+        </div>
+        <!-- Footer -->
+        
+
+    </div>
+
+            <div class="row footer">
+                <div class="col-lg-4" align="center">
+					
+					<div class="col-sm-12">
+						<img src="img/logo-white.png" alt="">
+					</div>
+					<div class="col-md-4"></div>
+					<div class="col-md-4">
+						<div class="col-xs-4">
+						<img src="img/fb-icon.png" alt="">
+						</div>
+						<div class="col-xs-4">
+						<img src="img/li-icon.png" alt="">
+						</div>
+						<div class="col-xs-4">
+						<img src="img/tw-icon.png" alt="">
+						</div>
+					</div>
+					<div class="col-md-4"></div>
+                </div>
+				<div class="col-lg-4">
+                    <div class="col-md-2">
+					</div>
+					<div class="col-md-8" id="footer-title">
+					
+					<ul class="footer-menu">
+						<li><a><b>PARIS - MONTR&Eacute;AL</b></a></li>
+						<li>&nbsp;</li>
+						<li><a href="#">REJOINDRE <b>L'&Eacute;QUIPE</b></a></li>
+						<li><a href="#">QUI <b>SOMMES NOUS</b></a></li>
+						<li><a href="#">PRESSE ET <b>M&Eacute;DIA</b></a></li>
+						<li><a href="#">CONTACT <b>JACK RUSSELL</b></a></li>
+					</ul>
+					</div>
+					<div class="col-md-2">
+					</div>
+                </div>
+				<div class="col-lg-4">
+                    <div class="col-md-8 col-md-offset-4" id="pige-cta">
+						<a href=" ">D&Eacute;COUVRIR <b>LA PIGE EMAIL</b></a>
+					</div>
+                </div>
+            </div>
+            <!-- /.row -->
+
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+	<script src="js/lazylinepainter.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+	 <script src="js/smooth.js"></script>
+	 <script src="js/morphext.min.js"></script>
+	 <script src="js/typeit.min.js"></script>
+    <!-- Script to Activate the Carousel -->
+    <script>
+	var initScroll=0;
+    $('.carousel').carousel({
+        interval: 5000 //changes the speed
+    });
+	$(window).scroll(function() {
+		if(initScroll===0){
+			$(".navbar").fadeOut();
+            $("#showgrid").fadeOut();
+			$(".creative").fadeOut();
+			$.smoothScroll({
+			  scrollElement: null,
+			  scrollTarget: '#grid1',
+			  speed:1500
+			});
+			initScroll=1;
+		}else if($(window).scrollTop() === 0){
+			initScroll=0;
+			$(".navbar").show();
+			$(".creative").show();
+            $("#showgrid").show();
+		}
+         
+    });
+    $("#showgrid").click(function(){
+        $(".navbar").fadeOut();
+        $("#showgrid").fadeOut();
+        $(".creative").fadeOut();
+        $.smoothScroll({
+          scrollElement: null,
+          scrollTarget: '#grid1',
+          speed:1500
+        });
+        initScroll=1;
+    });
+	$(".grid-child").hover(function(){
+		$(this).children(".title").slideUp("fast");
+		$(this).children(".intro").slideDown("slow");
+		
+		$("#grid1plus").lazylinepainter("paint");
+		$("#grid2plus").lazylinepainter("paint");
+		$("#grid3plus").lazylinepainter("paint");
+		$("#grid4plus").lazylinepainter("paint");
+		$("#grid5plus").lazylinepainter("paint");
+		$("#grid6plus").lazylinepainter("paint");
+		$("#grid7plus").lazylinepainter("paint");
+		$("#grid8plus").lazylinepainter("paint");
+		$("#grid9plus").lazylinepainter("paint");
+	},
+		function(){
+			$(this).children(".intro").slideUp("fast");
+			$(this).children(".title").delay(500).fadeIn("fast");
+		}
+	);
+	$(window).ready(function(){
+		var screenHeight = $(window).height();
+		var gridHeight = screenHeight/3;
+		$(".grid").height(gridHeight);
+		$("#grid-caption1").hide();
+        $("#grid-caption2").hide();
+		$("#grid-caption3").hide();
+        $("#grid-caption9").hide();
+		$("#turntext").Morphext({
+			// The [in] animation type. Refer to Animate.css for a list of available animations.
+			animation: "flipInX",
+			// An array of phrases to rotate are created based on this separator. Change it if you wish to separate the phrases differently (e.g. So Simple | Very Doge | Much Wow | Such Cool).
+			separator: ",",
+			// The delay between the changing of each phrase in milliseconds.
+			speed: 4000,
+			complete: function () {
+				// Called after the entrance animation is executed.
+			}
+		});
+	});
+	$("#grid1plus").click(function(){
+        $("#grid-caption2").slideUp();
+        $("#grid-caption3").slideUp();
+        $("#grid-caption9").slideUp();
+		$("#grid-caption1").delay(200).slideDown("slow");
+		$('#typeit').typeIt({
+			 strings: [" à forte dimension branding.", "à forte dimension story telling.","efficace & générateur de trafic."],
+			 speed: 100,
+			 breakLines: false,
+             lifeLike:true,
+             loop:true,
+             loopDelay:500
+		});
+	});
+        
+    $("#grid2plus").click(function(){
+        $("#grid-caption1").slideUp();
+        $("#grid-caption3").slideUp();
+        $("#grid-caption9").slideUp();
+		$("#grid-caption2").delay(200).slideDown("slow");
+	});
+    $("#grid3plus").click(function(){
+        $("#grid-caption1").slideUp();
+        $("#grid-caption2").slideUp();
+        $("#grid-caption9").slideUp();
+		$("#grid-caption3").delay(200).slideDown("slow");
+	});
+        $("#grid9plus").click(function(){
+        $("#grid-caption1").slideUp();
+        $("#grid-caption2").slideUp();
+        $("#grid-caption3").slideUp();
+		$("#grid-caption9").delay(200).slideDown("slow");
+	});
+    $("#close-caption1").click(function(){
+        $("#grid-caption1").slideUp("slow");
+    });
+     $("#close-caption2").click(function(){
+        $("#grid-caption2").slideUp("slow");
+    });
+     $("#close-caption3").click(function(){
+        $("#grid-caption3").slideUp("slow");
+    });
+        $("#close-caption9").click(function(){
+        $("#grid-caption9").slideUp("slow");
+    });
+</script>
+<script>
+	$(document).ready(function(){
+		var pathObj = {
+			"grid1plus": {
+				"strokepath": [
+					{
+						"path": "M40,10c16.6,0,30,13.4,30,30S56.6,70,40,70  S10,56.6,10,40S23.4,10,40,10",
+						"duration": 600
+					},
+					{
+						"path": "M 40 24 L 40 56",
+						"duration": 300
+					},
+					{
+						"path": "M 24 40 L 56 40",
+						"duration": 300
+					}
+				],
+				"dimensions": {
+					"width": 80,
+					"height": 80
+				}
+			},
+			"grid2plus": {
+				"strokepath": [
+					{
+						"path": "M40,10c16.6,0,30,13.4,30,30S56.6,70,40,70  S10,56.6,10,40S23.4,10,40,10",
+						"duration": 600
+					},
+					{
+						"path": "M 40 24 L 40 56",
+						"duration": 300
+					},
+					{
+						"path": "M 24 40 L 56 40",
+						"duration": 300
+					}
+				],
+				"dimensions": {
+					"width": 80,
+					"height": 80
+				}
+			},
+			"grid3plus": {
+				"strokepath": [
+					{
+						"path": "M40,10c16.6,0,30,13.4,30,30S56.6,70,40,70  S10,56.6,10,40S23.4,10,40,10",
+						"duration": 600
+					},
+					{
+						"path": "M 40 24 L 40 56",
+						"duration": 300
+					},
+					{
+						"path": "M 24 40 L 56 40",
+						"duration": 300
+					}
+				],
+				"dimensions": {
+					"width": 80,
+					"height": 80
+				}
+			},
+			"grid4plus": {
+				"strokepath": [
+					{
+						"path": "M40,10c16.6,0,30,13.4,30,30S56.6,70,40,70  S10,56.6,10,40S23.4,10,40,10",
+						"duration": 600
+					},
+					{
+						"path": "M 40 24 L 40 56",
+						"duration": 300
+					},
+					{
+						"path": "M 24 40 L 56 40",
+						"duration": 300
+					}
+				],
+				"dimensions": {
+					"width": 80,
+					"height": 80
+				}
+			},
+			"grid5plus": {
+				"strokepath": [
+					{
+						"path": "M40,10c16.6,0,30,13.4,30,30S56.6,70,40,70  S10,56.6,10,40S23.4,10,40,10",
+						"duration": 600
+					},
+					{
+						"path": "M 40 24 L 40 56",
+						"duration": 300
+					},
+					{
+						"path": "M 24 40 L 56 40",
+						"duration": 300
+					}
+				],
+				"dimensions": {
+					"width": 80,
+					"height": 80
+				}
+			},
+			"grid6plus": {
+				"strokepath": [
+					{
+						"path": "M40,10c16.6,0,30,13.4,30,30S56.6,70,40,70  S10,56.6,10,40S23.4,10,40,10",
+						"duration": 600
+					},
+					{
+						"path": "M 40 24 L 40 56",
+						"duration": 300
+					},
+					{
+						"path": "M 24 40 L 56 40",
+						"duration": 300
+					}
+				],
+				"dimensions": {
+					"width": 80,
+					"height": 80
+				}
+			},
+			"grid7plus": {
+				"strokepath": [
+					{
+						"path": "M40,10c16.6,0,30,13.4,30,30S56.6,70,40,70  S10,56.6,10,40S23.4,10,40,10",
+						"duration": 600
+					},
+					{
+						"path": "M 40 24 L 40 56",
+						"duration": 300
+					},
+					{
+						"path": "M 24 40 L 56 40",
+						"duration": 300
+					}
+				],
+				"dimensions": {
+					"width": 80,
+					"height": 80
+				}
+			},
+			"grid8plus": {
+				"strokepath": [
+					{
+						"path": "M40,10c16.6,0,30,13.4,30,30S56.6,70,40,70  S10,56.6,10,40S23.4,10,40,10",
+						"duration": 600
+					},
+					{
+						"path": "M 40 24 L 40 56",
+						"duration": 300
+					},
+					{
+						"path": "M 24 40 L 56 40",
+						"duration": 300
+					}
+				],
+				"dimensions": {
+					"width": 80,
+					"height": 80
+				}
+			},
+			"grid9plus": {
+				"strokepath": [
+					{
+						"path": "M40,10c16.6,0,30,13.4,30,30S56.6,70,40,70  S10,56.6,10,40S23.4,10,40,10",
+						"duration": 600
+					},
+					{
+						"path": "M 40 24 L 40 56",
+						"duration": 300
+					},
+					{
+						"path": "M 24 40 L 56 40",
+						"duration": 300
+					}
+				],
+				"dimensions": {
+					"width": 80,
+					"height": 80
+				}
+			}
+		}; 
+		$('#grid1plus').lazylinepainter( 
+		 {
+			"svgData": pathObj,
+			"strokeWidth": 2,
+			"strokeColor": "#ffffff"
+		});
+		$('#grid2plus').lazylinepainter( 
+		 {
+			"svgData": pathObj,
+			"strokeWidth": 2,
+			"strokeColor": "#000000"
+		});
+		$('#grid3plus').lazylinepainter( 
+		 {
+			"svgData": pathObj,
+			"strokeWidth": 2,
+			"strokeColor": "#ffffff"
+		});
+		$('#grid4plus').lazylinepainter( 
+		 {
+			"svgData": pathObj,
+			"strokeWidth": 2,
+			"strokeColor": "#ffffff"
+		});
+		$('#grid5plus').lazylinepainter( 
+		 {
+			"svgData": pathObj,
+			"strokeWidth": 2,
+			"strokeColor": "#ffffff"
+		});
+		$('#grid6plus').lazylinepainter( 
+		 {
+			"svgData": pathObj,
+			"strokeWidth": 2,
+			"strokeColor": "#ffffff"
+		});
+		$('#grid7plus').lazylinepainter( 
+		 {
+			"svgData": pathObj,
+			"strokeWidth": 2,
+			"strokeColor": "#ffffff"
+		});
+		$('#grid8plus').lazylinepainter( 
+		 {
+			"svgData": pathObj,
+			"strokeWidth": 2,
+			"strokeColor": "#000000"
+		});
+		$('#grid9plus').lazylinepainter( 
+		 {
+			"svgData": pathObj,
+			"strokeWidth": 2,
+			"strokeColor": "#ffffff"
+		});
+		
+	});
+    </script>
+</body>
+
+</html>

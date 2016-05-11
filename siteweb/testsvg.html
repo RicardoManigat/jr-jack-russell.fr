@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Accueil - Jack Russell</title>
+	<style>
+		@font-face{
+			font-family:JackRussell;
+			src: url(fonts/Montserrat-Regular.otf);
+		}
+		@font-face{
+			font-family:JackRussell;
+			src: url(fonts/Montserrat-Bold.otf);
+			font-weight:bold;
+		}
+		@font-face{
+			font-family:JackRussell;
+			src: url(fonts/Montserrat-ExtraBold.otf);
+			font-weight:bolder;
+		}
+		@font-face{
+			font-family:JackRussellBlack;
+			src:url(fonts/Montserrat-Black.otf);
+		}
+		@font-face{
+			font-family:JackRussellLite;
+			src:url(fonts/Montserrat-Light.otf);
+		}
+	</style>
+	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/full-slider.css" rel="stylesheet">
+	<style>
+		
+	</style>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+   
+    <!-- /.container -->
+	<div id="undefined" style="width:80px;height:80px;"></div>
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+	<script src="js/lazylinepainter.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+	 <script src="js/smooth.js"></script>
+    <!-- Script to Activate the Carousel -->
+    <script>
+	$(document).ready(function(){
+		var pathObj = {
+			"undefined": {
+				"strokepath": [
+					{
+						"path": "M40,10c16.6,0,30,13.4,30,30S56.6,70,40,70  S10,56.6,10,40S23.4,10,40,10",
+						"duration": 600
+					},
+					{
+						"path": "M 40 24 L 40 56",
+						"duration": 600
+					},
+					{
+						"path": "M 24 40 L 56 40",
+						"duration": 600
+					}
+				],
+				"dimensions": {
+					"width": 80,
+					"height": 80
+				}
+			}
+		}; 
+		$('#undefined').lazylinepainter( 
+		 {
+			"svgData": pathObj,
+			"strokeWidth": 2,
+			"strokeColor": "#000000"
+		});
+		
+		$("#undefined").lazylinepainter("paint");
+	});
+    </script>
+
+</body>
+
+</html>
