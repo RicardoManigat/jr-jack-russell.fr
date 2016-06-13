@@ -185,7 +185,7 @@ a:focus {
     color:black;
     font-family:JackRussellLite, sans-serif;
     position:relative;
-    font-size:2.5vh;
+    font-size:20px;
 }
 
 .section-2-content,
@@ -514,8 +514,9 @@ body {
 }
 .introtext{
     font-family: "Roboto",sans-serif;
-    font-weight: 400;
+    font-weight: 300;
     margin-bottom: 10px !important;
+    line-height: 1.3;
 }
 .introtext:first-child{
     margin-bottom: 25px !important;

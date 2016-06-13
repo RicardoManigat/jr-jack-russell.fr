@@ -45,8 +45,6 @@
     <script src="js/jquery.easing.min.js"></script>
     <!-- Custom Theme JavaScript -->
     <script src="js/grayscale.js"></script>
-     <script src="instantclick.min.js" data-no-instant></script>
-    <script data-no-instant>InstantClick.init();</script>
     <script>
         $(window).ready(function(){
             var menuposition = 0;
