@@ -1,0 +1,70 @@
+@font-face{
+    font-family:JackRussell;
+    src: url(../fonts/Montserrat-Regular.otf);
+}
+@font-face{
+    font-family:JackRussell;
+    src: url(../fonts/Montserrat-Bold.otf);
+    font-weight:bold;
+}
+@font-face{
+    font-family:JackRussell;
+    src: url(../fonts/Montserrat-ExtraBold.otf);
+    font-weight:bolder;
+}
+@font-face{
+    font-family:JackRussellBlack;
+    src:url(../fonts/Montserrat-Black.otf);
+}
+@font-face{
+    font-family:JackRussellLite;
+    src:url(../fonts/Montserrat-Light.otf);
+}
+
+
+body {
+    width: 100%;
+    height: 100%;
+    font-family: Roboto,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h6 {
+    margin: 0 0 35px;
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+p {
+    margin: 0 0 25px;
+    line-height: 1.5;
+}
+
+
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
+#wrapper{
+    background:#fff;
+}
+.page-title{
+    font-family: JackRussellBlack,sans-serif;
+    color: black;
+    margin-top:150px;
+    font-size:50px;
+}
+

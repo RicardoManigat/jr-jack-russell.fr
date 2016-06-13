@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>Email ShowCase - Smart</title>
+		<meta name="description" content="Morphing Devices: Device transition slideshow for showcasing work" />
+		<meta name="keywords" content="morphing, device, css3, transition, slideshow, autoplay, portfolio, showcase, concept" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="../favicon.ico"> 
+		<link rel="stylesheet" type="text/css" href="css/default.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<script src="js/modernizr.custom.js"></script>
+        <style>
+            .wrapper{
+                width:80%;
+                height:100%;
+                margin-top:15px;
+                background:#CCC;
+                -moz-border-radius:5px;
+                -webkit-border-radius:5px;
+                border-radius:5px;
+                border: 35px solid #333;
+                -webkit-transition: width 1s, height 2s; /* Safari */
+                transition: width 1s, height 2s;
+            }
+            .h_iframe        {position:relative;}
+            .h_iframe .ratio {display:block;width:100%;height:auto;}
+            .my_email{
+                top:0;
+                left:0;
+                width:100%; 
+                height:750px;
+                -webkit-transition: width 2s, height 1s; /* Safari */
+                transition: width 2s, height 1s;
+            }
+			.btm-laptop{
+            	width:80%;
+            }
+        </style>
+	</head>
+	<body>
+		<div class="container demo-1">
+			<header>
+             
+                <a id="version1">
+                    <img src="images/thumb1.jpg">
+                </a>
+                <a id="version2">
+                    <img src="images/thumb2.jpg">
+                </a>
+                <a id="version3">
+                    <img src="images/thumb3.jpg">
+                </a>
+			</header><center>
+            <div class="wrapper">
+            <div class="h_iframe">
+            <iframe src="../smart1.html" frameborder="0" allowfullscreen class="my_email" id="frame_version1"></iframe>
+            <iframe src="../smart2.html" frameborder="0" allowfullscreen class="my_email" id="frame_version2"></iframe>
+            <iframe src="../smart3.html" frameborder="0" allowfullscreen class="my_email" id="frame_version3"></iframe>
+            </div>
+            </div>
+            <div class="btm-laptop">
+            	<svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+					 viewBox="0 0 954.7 37.3" enable-background="new 0 0 954.7 37.3" xml:space="preserve">
+				<path fill="#DDDEDD" d="M936.7,0H477.3H18H0v18v1.3c0,9.9,8.1,18,18,18h459.3h459.3c9.9,0,18-8.1,18-18V18V0H936.7z"/>
+				<path fill="#A8A8A9" d="M531.4,0H423.3h-6v6v0.4c0,3.3,2.7,6,6,6h108.1c3.3,0,6-2.7,6-6V6V0H531.4z"/>
+				</svg>
+            </div>
+            </center>
+			
+		</div><!-- /container -->
+        <script   src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
+		<script src="js/morphingdevice.js"></script>
+		<script>
+			var display;
+            var iframeWidth;
+            var iframeHeight;
+            $(window).ready(function(){
+                $(".my_email").hide();
+                $("#frame_version1").show();
+                $(".wrapper").outerWidth("70%");
+                display = "laptop";
+                $(".wrapper").on('transitionend webkitTransitionEnd oTransitionEnd otransitionend MSTransitionEnd', 
+                    function() {
+                        iframeWidth = $(".my_email").width();
+                        iframeHeight = (iframeWidth/16);
+                        iframeHeight = iframeHeight*9;
+                        $(".my_email").height(iframeHeight+"px");
+                        
+                    });
+            });
+            
+            
+            $("#version1").click(function(){
+                $(".my_email").hide();
+                $("#frame_version1").fadeIn();
+            });
+            
+            $("#version2").click(function(){
+                $(".my_email").hide();
+                $("#frame_version2").fadeIn();
+            });
+            
+            $("#version3").click(function(){
+                $(".my_email").hide();
+                $("#frame_version3").fadeIn();
+            });
+            
+		</script>
+	</body>
+</html>

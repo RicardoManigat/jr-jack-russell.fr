@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<url>
+  <loc>http://www.jack-russell.net/index.php</loc>
+</url>
+<url>
+  <loc>http://www.jack-russell.net/presentation.php</loc>
+</url>
+<url>
+  <loc>http://www.jack-russell.net/team.php</loc>
+</url>
+<url>
+  <loc>http://www.jack-russell.net/emails.php</loc>
+</url>
+<url>
+  <loc>http://www.jack-russell.net/barometre.php</loc>
+</url>
+<url>
+  <loc>http://www.jack-russell.net/veille.php</loc>
+</url>
+<url>
+  <loc>http://www.jack-russell.net/contact.php</loc>
+</url>
+<url>
+  <loc>http://www.jack-russell.net/recrutement.php</loc>
+</url>
+<url>
+  <loc>http://www.jack-russell.net/legal.php</loc>
+</url>
+<url>
+  <loc>http://www.jack-russell.net/contact.php</loc>
+  <lastmod>2016-06-08T14:43:22+00:00</lastmod>
+</url>
+</urlset>

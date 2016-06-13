@@ -1,0 +1,11 @@
+# Disallows subdirectories containing program files or resources not to be indexed
+
+User-agent: *
+Disallow: /css/
+Disallow: /fonts/
+Disallow: /img/
+Disallow: /includes/
+Disallow: /js/
+Disallow: /mails/
+Disallow: /phpmailer/
+Disallow: /svg/
