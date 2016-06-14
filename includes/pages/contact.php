@@ -12,13 +12,13 @@
                     <div class="col-sm-6 agence-detail">
                         <h3>PARIS</h3>
                         <p class="address">25, Rue d'Hauteville<br>75010 Paris</p>
-                        <p class="address">Tél : +33 1 43 18 01 07<br>paris@jack-russell.net</p>
+                        <p class="address">Tél : +33 1 43 18 01 07<br></p>
                     </div>
                     
                     <div class="col-sm-6 agence-detail">
                         <h3>MONTR&Eacute;AL</h3>
                         <p class="address">50 Rue Queen, bureau 401<br>Montréal, QC H3C 2N5</p>
-                        <p class="address">Tél : +1 (514) 871 0775<br>montreal@jack-russell.net</p>
+                        <p class="address">Tél : +1 (514) 871 0775<br></p>
                     </div>
                     </div>
                     <div class="row">
