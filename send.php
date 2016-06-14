@@ -21,7 +21,7 @@
         $mail->Port = 587;
 
         $mail->setFrom($email, $nom);
-        $mail->addAddress('ebarbe@varibase.com', 'Jack Russell');     // Add a recipient
+        $mail->addAddress('hello@jack-russell.fr', 'Jack Russell');     // Add a recipient
 
         $mail->isHTML(true);                                  // Set email format to HTML
 

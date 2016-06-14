@@ -115,6 +115,8 @@
                 });
                 
             } else {
+                var screenHeight = $(window).height();
+                $(".intro").height(screenHeight);
                 $("#section-2").height("1500px");
                 $("#section-3").height("1500px");
                 $(".scroller").hide();
