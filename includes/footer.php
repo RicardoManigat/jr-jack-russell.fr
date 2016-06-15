@@ -3,9 +3,9 @@
                 <div class="row footer">
                 <div class="col-md-4 footer-col-1" align="left">
 					
-					<div class="col-xs-12" style="padding-left: 0px !important;">
+					<div class="col-xs-12" style="padding-left: 30px !important;">
                         <a href="./">
-						<svg version="1.1" id="logo_footer" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 120.5 51.2" enable-background="new 0 0 120.5 51.2" xml:space="preserve" width="300" class="logo-foot">
+						<svg version="1.1" id="logo_footer" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 120.5 51.2" enable-background="new 0 0 120.5 51.2" xml:space="preserve" width="200" class="logo-foot">
                             <path fill="#FFFFFF" d="M61.3,26.3v-4.3H63v4.2c0,1.2,0.6,1.8,1.6,1.8c1,0,1.6-0.6,1.6-1.8v-4.3h1.6v4.2c0,2.3-1.3,3.4-3.3,3.4
                                 C62.5,29.7,61.3,28.5,61.3,26.3z"></path>
                             <path fill="#FFFFFF" d="M69.5,28.4l1-1.2c0.7,0.6,1.4,0.9,2.2,0.9c0.7,0,1.1-0.3,1.1-0.7v0c0-0.4-0.3-0.6-1.5-1
@@ -36,18 +36,15 @@
 					<div class="col-md-3"></div>
                 </div>
 				<div class="col-md-4">
-					<div class="col-xs-12" id="footer-title">
-					<div class="col-xs-12">
-					<ul class="footer-menu">
-                        
+					
+					
+					<div class="col-lg-8 col-lg-offset-2 col-xs-12 social-cc" align="center">
+						<ul class="footer-menu">
 						<li><a href="./emploi.php">REJOINDRE <b>L'&Eacute;QUIPE</b></a></li>
 						<li><a href="./presse.php">PRESSE ET <b>M&Eacute;DIA</b></a></li>
 						<li><a href="./contact.php">CONTACT <b></b></a></li>
                         <li><a href="./mentionslegales.php">MENTIONS <b>L&Eacute;GALES</b></a></li>
-					</ul>
-					</div>
-					<div class="col-xs-12 social-cc">
-                        <a href="https://www.facebook.com/AgenceJackRussell/?fref=ts" target="_blank">
+						<li> <a href="https://www.facebook.com/AgenceJackRussell/?fref=ts" target="_blank">
 						<svg version="1.1" id="logo_facebook" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 							 viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve" width="25">
 						<g>
@@ -84,10 +81,12 @@
 			C480.1,136.8,498,118.3,512,97.3z"/>
 	</g>
 </g>
-</svg></a>
+</svg></a></li>
+					</ul>
+                       
 
 						</div>
-					</div>
+				
 					
                 </div>
 				<div class="col-md-4">

@@ -190,9 +190,10 @@ padding-top:20px;
 }
 .footer-menu{
 margin-top:20px;
-margin-left:150px !important;
+/*margin-left:150px !important;*/
 list-style-type:none;
 text-align:left;
+
 }
 .footer-menu li a{
 text-decoration:none;
@@ -259,11 +260,15 @@ a {
 text-decoration: none;
 outline: none;
 }
+
 .social-cc svg{
 margin:25px;
 }
+#logo_facebook{
+	margin-left:0px !important;
+}
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1000px) {
     .footer-menu{
         margin-left: -25px !important;
         text-align: center !important;

@@ -516,7 +516,8 @@ body {
     font-family: "Roboto",sans-serif;
     font-weight: 300;
     margin-bottom: 10px !important;
-    line-height: 1.3;
+	font-size: 18px !important;
+    line-height: 1.5;
 }
 .introtext:first-child{
     margin-bottom: 25px !important;

@@ -93,7 +93,7 @@
                             $(".cbp-spmenu-push").removeClass('cbp-spmenu-push-toleft');
 		                    $('html, body').stop().animate({
 		                        scrollTop: $("#section-2").offset().top
-		                    }, 1500, 'easeInOutExpo');
+		                    }, 1500, 'easeOutExpo');
 		                    $("#arrow").css("fill","#E73635");
                             
 		                    position = 2;
@@ -103,7 +103,7 @@
 		                	
 		                    $('html, body').stop().animate({
 		                        scrollTop: $("#section-3").offset().top
-		                    }, 1500, 'easeInOutExpo');
+		                    }, 1500, 'easeOutExpo');
 		                    $("#arrow").css("display","none");
 		                    position = 3;
 		                    event.preventDefault();
@@ -119,7 +119,7 @@
                         $(".cbp-spmenu-push").removeClass('cbp-spmenu-push-toleft');
                         $('html, body').stop().animate({
                             scrollTop: $("#section-2").offset().top
-                        }, 1500, 'easeInOutExpo');
+                        }, 1500, 'easeOutExpo');
                         $("#arrow").css("fill","#E73635");
                         position = 2;
                         initScroll=1;
@@ -132,7 +132,7 @@
                     }else if((position == 2)&&($(window).scrollTop()>$("#section-2").offset().top)){
                         $('html, body').stop().animate({
                             scrollTop: $("#section-3").offset().top
-                        }, 1500, 'easeInOutExpo');
+                        }, 1500, 'easeOutExpo');
                         $("#arrow").css("display","none");
                         position = 3;
                         

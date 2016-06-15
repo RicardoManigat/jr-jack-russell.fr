@@ -104,7 +104,7 @@
             </div>
             <div class="row-fluid">
             	<div class="col-sm-12">
-            		<p class="text-muted" style="font-size:12px;">Source : Etude - Reproduction interdite - tous droits r&eacute;serv&eacute;s par Mediametrie et Jack Russell</p>
+            		<p class="text-muted" style="font-size:12px;">Tous droits r&eacute;serv&eacute;s par Mediametrie et Jack Russell</p>
             	</div>
             </div>
             <div class="row-fluid" >

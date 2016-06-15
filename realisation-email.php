@@ -168,7 +168,7 @@
                     $(".cbp-spmenu-push").removeClass('cbp-spmenu-push-toleft');
                     $('html, body').stop().animate({
                         scrollTop: $("#content").offset().top -90
-                    }, 1500, 'easeInOutExpo');
+                    }, 1500, 'easeOutExpo');
                     $("#arrow").css("display","none");
                     position = 2;
                     event.preventDefault();
@@ -181,7 +181,7 @@
                         $(".cbp-spmenu-push").removeClass('cbp-spmenu-push-toleft');
                         $('html, body').stop().animate({
                             scrollTop: $("#content").offset().top -90
-                        }, 1500, 'easeInOutExpo');
+                        }, 1500, 'easeOutExpo');
                         $("#arrow").css("display","none");
                         position = 2;
                         initScroll=1;
