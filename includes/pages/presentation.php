@@ -26,8 +26,8 @@
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-12 data-vis-parent">
                     <div class="col-md-12">
-                        <p class="introtext">Jack Russell a été créé sur une conviction forte de ses cofondateurs, Eric AZARA et Frédéric GOUBET : <?php echo LEMAIL_SING_MIN; ?> est un média à part entière qui est aujourd’hui mal traité. Jack Russell a donc une seule ambition&nbsp;: prouver que <?php echo LEMAIL_SING_MIN; ?>  est la clé d’une relation durable entre une marque et ses clients, tant au plan stratégique qu’opérationnel.</p>
-                        <p class="introtext">Pour réussir cet objectif, Jack Russell s'est structuré en trois pôles&nbsp;:</p>
+                        <p class="introtext">L'agence Jack Russell a été créée sur une conviction forte de ses cofondateurs, Eric AZARA et Frédéric GOUBET : <?php echo LEMAIL_SING_MIN; ?> est un média à part entière qui est aujourd’hui mal traité. Jack Russell a donc une seule ambition&nbsp;: prouver que <?php echo LEMAIL_SING_MIN; ?>  est la clé d’une relation durable entre une marque et ses clients, tant au plan stratégique qu’opérationnel.</p>
+                        <p class="introtext">Pour atteindre cet objectif, Jack Russell s'est structurée en trois pôles&nbsp;:</p>
                     </div>
                 </div>
             </div>
@@ -35,7 +35,7 @@
         		<div class="col-lg-8 col-lg-offset-2 col-md-12 data-vis-parent">
 	        		<div class="col-md-4"><p class="data-vis"><i>UN P&Ocirc;LE AGENCE</i></p></div>
 	        		<div class="col-md-8">
-	        			<p class="description">Conception de campagnes utilisant toutes les possibilités du média <?php echo EMAIL_SING_MIN; ?>&nbsp;: L’équipe, composée d’une vingtaine de personnes, conçoit les <?php echo EMAIL_PLUR_MIN; ?>, gère la création et la stratégie de contenu, les campagnes et leur segmentation.</p>
+	        			<p class="description">Conception de campagnes utilisant toutes les possibilités du média <?php echo EMAIL_SING_MIN; ?>&nbsp;: L’équipe, composée d’une vingtaine de personnes, conçoit les <?php echo EMAIL_PLUR_MIN; ?>, gère la création et la stratégie de contenus, les campagnes et leur segmentation.</p>
 	        		</div>
         		</div>
         	</div>
@@ -44,7 +44,7 @@
 	        		<div class="col-md-4"><p class="data-vis"><i>UN P&Ocirc;LE &Eacute;TUDES <br>ET M&Eacute;DIAS</i></p></div>
 	        		<div class="col-md-8">
 	        			<p class="description">Développement des outils pour mesurer avec le maximum de pertinence la performance des <?php echo EMAIL_PLUR_MIN; ?>&nbsp;:</p>
-	        			<p class="description">- Le 1<sup>er</sup> baromètre de <?php echo LEMAIL_SING_MIN; ?> Médiamétrie/Jack Russell analyse les habitudes de consultation du grand public et ses attentes par rapport à ce media. C’est le 1<sup>er</sup> outil d’étude du média auprès du grand public.</p>
+	        			<p class="description">- Le 1<sup>er</sup> baromètre de <?php echo LEMAIL_SING_MIN; ?> Médiamétrie/Jack Russell analyse les habitudes de consultation du grand public et ses attentes par rapport à ce media. C’est le 1<sup>er</sup> outil d’étude de l'email auprès du grand public.</p>
 	        			<p class="description">- La matrice d’analyse de la pression promotionnelle décortique l’impact des offres promotionnelles sur les différents publics d’une marque.</p>
 	        		</div>
         		</div>
@@ -53,7 +53,7 @@
         		<div class="col-lg-8 col-lg-offset-2 col-md-12 data-vis-parent">
 	        		<div class="col-md-4"><p class="data-vis"><i>UN P&Ocirc;LE VEILLE<br> ET ANALYSE</i></p></div>
 	        		<div class="col-md-8">
-	        			<p class="description">Outil d’analyse des campagnes d’emailing réalisés par leurs concurrents&nbsp;: La plateforme de pige Jack Russell donne la possibilité aux marques de s’abonner à une analyse qualitative des campagnes <?php echo EMAIL_SING_MIN; ?> sur les secteurs de leur choix.</p>
+	        			<p class="description">Outil d’analyse des campagnes d’emailing réalisées par leurs concurrents&nbsp;: La plateforme de pige Jack Russell donne la possibilité aux marques de s’abonner à une analyse qualitative des campagnes <?php echo EMAIL_SING_MIN; ?> sur les secteurs de leur choix.</p>
 	        		</div>
         		</div>
         	</div>

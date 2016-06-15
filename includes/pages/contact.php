@@ -22,7 +22,7 @@
                     </div>
                     </div>
                     <div class="row">
-                        <div class="col-xs-12"><p class="subtext">Vous êtes intéressés par notre approche et souhaitez en découvrir plus sur nous. Merci de nous envoyer un <?php echo EMAIL_SING_MIN; ?> en choisissant le sujet qui vous intéresse. Nous prendrons contact rapidement.</p></div></div>
+                        <div class="col-xs-12"><p class="subtext">Vous êtes intéressé par notre approche et souhaitez en découvrir plus sur nous. Merci de nous envoyer un <?php echo EMAIL_SING_MIN; ?> en choisissant le sujet qui vous intéresse. Nous prendrons contact rapidement.</p></div></div>
                 </div>
                 <div class="col-md-6 col-xs-12 col-white" align="center">
                     <div id="form-content">

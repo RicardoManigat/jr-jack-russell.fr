@@ -28,7 +28,7 @@
 	        	</div>
 	            <div class="col-lg-8">
 	            	<p class="description">Les données actuelles sur l’emailing, taux d’ouverture et taux de clic sont des statistiques quantitatives issues, en règle générale, des plateformes de gestion de campagne. Elles ont du mal à mesurer l’effet courrier indésirable.</p>
-	            	<p class="description">2000 consommateurs ont participé à l’étude et répondu à 30 questions sur leurs habitudes face à <?php echo LEMAIL_SING_MIN; ?> : Qu’est-ce qui suscitent leur intérêt ? Qu’est-ce qui leur plait dans un <?php echo EMAIL_SING_MIN; ?> ? Qu’est-ce qu’ils sont prêts à partager avec leur entourage ?</p>
+	            	<p class="description">2000 consommateurs ont participé à l’étude et répondu à 30 questions sur leurs habitudes face à <?php echo LEMAIL_SING_MIN; ?> : Qu’est-ce qui suscite leur intérêt ? Qu’est-ce qui leur plait dans un <?php echo EMAIL_SING_MIN; ?> ? Qu’est-ce qu’ils sont prêts à partager avec leur entourage ?</p>
 	        	</div>
             </div></div>
             <div class="row-fluid">
@@ -46,7 +46,7 @@
 	            	<p class="data-vis"><br><i>30</i><br>Questions</p>
 	        	</div>
 	            <div class="col-lg-8">
-	            	<p class="muted-text">Médiamétrie, créée en 1985, est une entreprise spécialisée dans la mesure d'audience et les études marketing des médias audiovisuels et interactifs en France. Elle observe, mesure et analyse les comportements du public et les tendances du marché des médias et de la communication. Elle est notamment connue pour sa marque Audimat, dont le nom est devenu un mot du langage courant.</p>
+	            	<p class="description">Médiamétrie, créée en 1985, est une entreprise spécialisée dans la mesure d'audience et les études marketing des médias audiovisuels et interactifs en France. Elle observe, mesure et analyse les comportements du public et les tendances du marché des médias et de la communication. Elle est notamment connue pour sa marque Audimat, dont le nom est devenu un mot du langage courant.</p>
 	        	</div>
             </div></div>
         </div>
