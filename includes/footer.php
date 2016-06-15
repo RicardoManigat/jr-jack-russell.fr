@@ -3,7 +3,7 @@
                 <div class="row footer">
                 <div class="col-md-4 footer-col-1" align="left">
 					
-					<div class="col-xs-12" style="padding-left: 30px !important;">
+					<div class="col-xs-12 redir" style="padding-left: 30px !important;">
                         <a href="./">
 						<svg version="1.1" id="logo_footer" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 120.5 51.2" enable-background="new 0 0 120.5 51.2" xml:space="preserve" width="200" class="logo-foot">
                             <path fill="#FFFFFF" d="M61.3,26.3v-4.3H63v4.2c0,1.2,0.6,1.8,1.6,1.8c1,0,1.6-0.6,1.6-1.8v-4.3h1.6v4.2c0,2.3-1.3,3.4-3.3,3.4
@@ -30,7 +30,7 @@
                             <polygon fill="#010202" points="42.8,25.3 45.8,22.1 47.8,22.1 44.7,25.2 47.9,29.5 45.9,29.5 "></polygon>
                         </svg></a>
 					</div>
-					<div class="col-md-6" id="parim-div">
+					<div class="col-md-6 col-xs-12" id="parim-div">
 						<b class="parim">PARIS&nbsp;&nbsp;|&nbsp;&nbsp;MONTR&Eacute;AL</b>
 					</div>
 					<div class="col-md-3"></div>

@@ -46,6 +46,7 @@
     <script src="js/grayscale.js"></script>
     
     <script>
+		
         $(window).ready(function(){
             var menuposition = 0;
             $("#menu-open").click(function(){
