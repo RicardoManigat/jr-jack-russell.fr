@@ -34,7 +34,7 @@
             <div class="row-fluid">
             	<div class="col-lg-8 col-lg-offset-2 col-xs-12">
 	            <div class="col-lg-4 data-vis-parent">
-	            	<p class="data-vis"><br><i>2000</i><br>Consommateurs</p>
+	            	<p class="data-vis" id="deuxmille"><br><i>2000</i><br>Consommateurs</p>
 	        	</div>
 	            <div class="col-lg-8">
 	            	<p class="description">Le baromètre, créé avec les équipes scientifiques de Médiamétrie permet d’évaluer la performance et la pertinence des campagnes <?php echo EMAIL_PLUR_MIN; ?> au même titre qu’un média traditionnel. </p>
@@ -46,7 +46,7 @@
 	            	<p class="data-vis"><br><i>30</i><br>Questions</p>
 	        	</div>
 	            <div class="col-lg-8">
-	            	<p class="description">Médiamétrie, créée en 1985, est une entreprise spécialisée dans la mesure d'audience et les études marketing des médias audiovisuels et interactifs en France. Elle observe, mesure et analyse les comportements du public et les tendances du marché des médias et de la communication. Elle est notamment connue pour sa marque Audimat, dont le nom est devenu un mot du langage courant.</p>
+	            	<p class="muted-text">Médiamétrie, créée en 1985, est une entreprise spécialisée dans la mesure d'audience et les études marketing des médias audiovisuels et interactifs en France. Elle observe, mesure et analyse les comportements du public et les tendances du marché des médias et de la communication. Elle est notamment connue pour sa marque Audimat, dont le nom est devenu un mot du langage courant.</p>
 	        	</div>
             </div></div>
         </div>
