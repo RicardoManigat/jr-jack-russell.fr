@@ -40,16 +40,16 @@
         <h3 class="subtitle">
             Editeur du présent site :
         </h3>
-        <p class="text">www.jack-russell.fr<br><br><br>(Ci-dessous appelés « le site »)<br><br>Jack Russell., Société Anonyme au capital de 946 134 Euros, situé au 25, rue d’Hauteville – 75010 Paris, France, numéro SIREN 438 689 747<br>(Ci-dessous appelé « Jack-Russell »)<br>Pour toute suggestion, information, réaction concernant ce site, écrivez à  contact@jack-russell.fr
+        <p class="text">www.jack-russell.fr<br><br><br>(Ci-dessous appelé « le site »)<br><br>Jack Russell., Société Anonyme au capital de 946 134 Euros, situé au 25, rue d’Hauteville – 75010 Paris, France, numéro SIREN 438 689 747<br>(Ci-dessous appelé « Jack-Russell »)<br>Pour toute suggestion, information, réaction concernant ce site, écrivez à  contact@jack-russell.fr
         </p><br><br>
         <h3 class="subtitle">
             Crédits :
         </h3>
         <p class="text">
-            Le  sites a été réalisé par Jack-Russell<br>Direction de publication : Frédéric Goubet, Associé de Jack-Russell<br>Photos : Stocksy et Shutterstock
+            Le  site a été réalisé par Jack-Russell<br>Direction de publication : Frédéric Goubet, Associé de Jack-Russell<br>Photos : Stocksy et Shutterstock
         </p><br><br>
             <h3 class="subtitle">
-            Conception, Réalisation technique des sites : 
+            Conception, Réalisation technique du site : 
         </h3>
         <p class="text">
             Jack-Russell
@@ -58,19 +58,19 @@
             Hébergeur :
         </h3>
         <p class="text">
-            Ces sites sont hébergés par :<br>OVH<br>2 rue Kellermann<br>59100 Roubaix<br>France. 
+            Ce site est hébergé par :<br>OVH<br>2 rue Kellermann<br>59100 Roubaix<br>France. 
         </p><br><br>
             <h3 class="subtitle">
             Droits d'auteur :
         </h3>
         <p class="text">
-            Le site est protégés par le droit d'auteur. Les droits de propriété intellectuelle relatifs aux sites restent la propriété exclusive de Jack Russell. Les marques de l'éditeur du site<br>
-           www.jack-russell.fr<br><br>
-            ainsi que les logos figurant sur les sites sont des marques déposées. L'utilisation de ces sites ne confère aucun droit. En conséquence, le téléchargement de tout ou partie des textes, images, sons, photographies, données, marques et tout autre élément qui y sont contenus qu'à des fins strictement privées, est interdit.<br>
-            Toute réutilisation, diffusion, commercialisation, reproduction et représentation, totale ou partielle, d'éléments de ces sites à d'autres fins qu'un usage privé, sans l'autorisation préalable expresse de Jack Russell, est interdite et constitutive du délit de contrefaçon de droit d'auteur et/ou d'atteinte aux droits voisins.
+            Le site est protégé par le droit d'auteur. Les droits de propriété intellectuelle relatifs au site restent la propriété exclusive de Jack Russell. Les marques de l'éditeur du site <br>www.jack-russell.fr<br>
+ainsi que les logos figurant sur le site sont des marques déposées. L'utilisation de ce site ne confère aucun droit. En conséquence, le téléchargement de tout ou partie des textes, images, sons, photographies, données, marques et tout autre élément qui y sont contenus, autre qu'à des fins strictement privées, est interdit.<br>
+Toute réutilisation, diffusion, commercialisation, reproduction et représentation, totale ou partielle, d'éléments de ce site, autre qu'un usage privé, sans l'autorisation préalable expresse de Jack Russell, est interdite et constitutive du délit de contrefaçon de droit d'auteur et/ou d'atteinte aux droits voisins.<br>
+
         </p><br><br>
             <h3 class="subtitle">
-            Accès aux sites :
+            Accès au site :
         </h3>
         <p class="text">
             L'utilisateur de ce site reconnaît disposer de la compétence et des moyens nécessaires pour accéder et utiliser ce site. Il est rappelé que le fait d'accéder ou de se maintenir frauduleusement dans un système informatique, d'entraver ou de fausser le fonctionnement d'un tel système, d'introduire ou de modifier frauduleusement des données dans un système informatique constituent des délits passibles de sanctions pénales.
@@ -87,7 +87,7 @@
         <p class="text">
            Les liens hypertextes établis en direction d'autres sites à partir de <br>
             www.jack-russell.fr<br>
-            ne saurait, en aucun cas, engager la responsabilité de Jack Russell.
+            ne sauraient, en aucun cas, engager la responsabilité de Jack Russell.
         </p><br><br>
             <h3 class="subtitle">
             Cookies
