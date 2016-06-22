@@ -19,7 +19,7 @@ var monCookie = getCookie("visited");
 
 if(monCookie===""){
     var notification = new NotificationFx({
-        message : '<p>En poursuivant votre navigation sur ce site, vous acceptez l&apos;utilisation de cookies pour réaliser des statistiques de visite.<br><a href="./legal.php">En savoir plus.</a></p>',
+        message : '<p>En poursuivant votre navigation sur ce site, vous acceptez l&apos;utilisation de cookies pour réaliser des statistiques de visite.<br><a href="./mentionslegales.php">En savoir plus.</a></p>',
         layout : 'growl',
         effect : 'slide',
         type : 'notice', // notice, warning or error
