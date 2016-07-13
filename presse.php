@@ -14,7 +14,38 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/header-footer.css">
     <link rel="stylesheet" href="css/legal.css">
-     
+     <style>
+		.date{
+			font-size: 16px;
+			font-family: Roboto, sans-serif;
+			font-weight: 500;
+		}
+		.description{
+			font-size: 16px;
+			font-family: Roboto, sans-serif;
+			font-weight: 400;
+			
+		}
+		.subtitle{
+			font-family:'JackRussellBlack', sans-serif;
+			color:#E73635;
+			line-height: 0.6;
+		}
+		.bloc-press{
+			padding:15px;
+			margin-bottom: 40px !important;
+		}
+		.press-cta{ 
+			background: #E73635;
+			color:white !important;
+			font-family: Roboto, sans-serif;
+			font-weight: 500;
+			padding:10px 15px 10px 15px;
+			text-decoration: none !important;
+			
+		}
+		
+	</style>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
