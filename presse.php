@@ -30,22 +30,7 @@
     <?php require("includes/top-bar.php"); ?>
     <!-- Intro Header -->
     
-    <div class="container-fluid" id="wrapper">
-        <div class="container">
-    <div class="row">
-        <div class="col-lg-12 col-sm-12">
-        <h1 class="page-title">PRESSE ET M&Eacute;DIAS</h1>
-        
-        <h3 class="subtitle">
-            A venir...
-        </h3>  <br><br>  <br><br>  <br><br>  <br><br>  <br><br>  <br><br>  <br><br>  <br><br>  <br><br>
-        
-        </div>    
-    </div>
-    
-    <br><br>
-   
-    </div></div>
+    <?php require("includes/pages/presse.php"); ?> 
     
     
     <!-- About Section -->

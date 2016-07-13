@@ -110,7 +110,7 @@
             <div class="row-fluid" >
                 <div class="col-lg-8 col-lg-offset-2 col-xs-12" id="last-row">
                     <div class="col-sm-6">
-                        <p id="section-3-text">La 1&egrave;re publication des r&eacute;sultats d&apos;audience<br>du Barom&egrave;tre de l&apos;<?php echo EMAIL_SING_MIN; ?> aura lieu lors<br> d&apos;une conf&eacute;rence de presse &agrave; Paris <br>le 30 juin 2016.</p>
+                        <p id="section-3-text"><br><br></p>
                     </div>
                     <div class="col-sm-6"><center><a href="./contact.php#form-content?subject=Je souhaite en savoir plus sur le barometre"><div class="cta-barometre">Je souhaite en savoir plus<br>sur le barom&egrave;tre</div></a></center></div>
                 </div>
