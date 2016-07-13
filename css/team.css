@@ -817,14 +817,15 @@ h3:active{
                 cursor: pointer;
                margin-top:20px !important;
             }
-            .title__screen{
+           .title__screen{
                 text-align: center;
-                font-family: "JackRussell",sans-serif;
+                font-family:'JackRussell',sans-serif;
                 font-weight: bolder;
                 text-transform: uppercase;
                 color:white;
-                font-size: 4vh;
-                margin-top:10px;
+                font-size: 3.9vh;
+                margin-top:20px;
+				line-height:1.1;
             }
             @media only screen and (max-width: 1350px) {
                 .codrops-links{
