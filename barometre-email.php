@@ -72,6 +72,25 @@
                    
                  }
              });
+			
+			$(".cta-barometre").click(function(){
+				$(".cta-barometre").hide();
+				$(".form-cta-barometre").fadeIn("slow");
+			});
+			
+			$(".form-cta-barometre").submit(function(e){
+            e.preventDefault();
+            
+            var email = $("#form-email").val();
+			var phone = $("#form-phone").val();
+			var subject = "barometre";
+            $.post( "send.php", { email: email, phone: phone, subject: subject })
+              .done(function( data ) {
+                $(".form-cta-barometre").hide();
+                $("#message").html(data);
+                
+              });
+        });
         });
         $(window).ready(function(){
             

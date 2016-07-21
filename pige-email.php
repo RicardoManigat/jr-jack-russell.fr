@@ -69,6 +69,24 @@
                    
                  }
              });
+			
+			$(".cta-barometre").click(function(){
+				$(".form-cta-barometre").slideToggle();
+			});
+			
+			$(".form-cta-barometre").submit(function(e){
+            e.preventDefault();
+            
+            var email = $("#form-email").val();
+			var phone = $("#form-phone").val();
+			var subject = "pige";
+            $.post( "send.php", { email: email, phone: phone, subject: subject })
+              .done(function( data ) {
+                $(".form-cta-barometre").hide();
+                $("#message").html(data);
+                
+              });
+        });
         });
         
         $(window).ready(function(){

@@ -25,20 +25,29 @@
            <div class="col-lg-8 col-lg-offset-2 col-md-12 data-vis-parent">
                <div class="col-md-6"> <p class="data-vis"><br><i>20</i><br>Secteurs &eacute;tudi&eacute;s</p></div>
                <div class="col-md-6"><p class="description">Actualisée quotidiennement, elle permet d’accéder à des milliers d’<?php echo $words['emails']; ?>, classés par secteur d’activité, thématique et type d’offre et qui s’enrichit chaque jour des nouvelles communications email des marques référencées. Véritable mine d’informations, cette pige est aussi une source d’inspiration pour nos équipes.</p></div>
-              
                </div>
             </div>
             <div class="row">
            <div class="col-lg-8 col-lg-offset-2 col-md-12 data-vis-parent">
                <div class="col-md-6"> <p class="data-vis"><i>1000+</i><br>Marques suivies<br>quotidiennement</p></div>
                <div class="col-md-6"><p class="description">Si vous souhaitiez conna&icirc;tre les dernières tendances créatives, chercher l’inspiration ou analyser la communication de vos concurrents, vous pouvez vous inscrire.</p></div>
-              
                </div>
             </div>
             <div class="row" id="last-row">
            <div class="col-lg-8 col-lg-offset-2 col-xs-12 data-vis-parent">
                <div class="col-md-6"> <p class="data-vis"><i>10 000</i><br><?php echo $words['emails']; ?> r&eacute;pertori&eacute;s</p></div>
-               <div class="col-md-6"><center><a href="contact.php?subject=Je souhaite en savoir plus sur la veille e-mail"><div class="cta-barometre">Je souhaite en savoir plus sur la pige</div></a></center></div>
+               <div class="col-md-6">
+			   		<center>
+							<div class="cta-barometre">Je souhaite en savoir plus sur la pige</div>
+							<div id="message"></div>
+							<form class="form-cta-barometre" action="#">
+								<input type="text" name="email" placeholder="Votre Courriel" id="form-email">
+								<input type="text" name="phone" placeholder="Votre Téléphone" id="form-phone">
+								<input type="hidden" name="subject" value="pige">
+								<input type="submit" value="ENVOYER">
+							</form>
+				   </center>
+			   </div>
               
                </div>
             </div>

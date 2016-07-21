@@ -109,10 +109,18 @@
             </div>
             <div class="row-fluid" >
                 <div class="col-lg-8 col-lg-offset-2 col-xs-12" id="last-row">
-                    <div class="col-sm-6">
-                        <p id="section-3-text"><br><br></p>
-                    </div>
-                    <div class="col-sm-6"><center><a href="./contact.php#form-content?subject=Je souhaite en savoir plus sur le barometre"><div class="cta-barometre">Je souhaite en savoir plus<br>sur le barom&egrave;tre</div></a></center></div>
+                    <div class="col-sm-12">
+						<center>
+								<form class="form-cta-barometre">
+									<input type="text" name="email" placeholder="Votre Email" id="form-email">
+									<input type="text" name="phone" placeholder="Votre Téléphone" id="form-phone">
+									<input type="hidden" name="subject" value="barometre">
+									<input type="submit" value="ENVOYER"> 
+								</form>
+								<div id="message"></div>
+								<div class="cta-barometre">Je souhaite en savoir plus<br>sur le barom&egrave;tre</div>
+						</center>
+					</div>
                 </div>
             </div>
         </div>

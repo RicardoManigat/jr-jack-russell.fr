@@ -259,7 +259,7 @@ a:focus {
     color:white;
     padding: 10px;
     width: inherit !important;
-    max-width:70%;
+    max-width:50%;
     font-family: JackRussellLite, sans-serif;
     font-size: 2vh;
     text-transform: uppercase;
@@ -403,6 +403,15 @@ ul.banner-social-buttons {
     ul.banner-social-buttons {
         margin-top: 15px;
     }
+	
+}
+@media(max-width:792px){
+	.form-cta-barometre input[type="text"]{
+		margin-bottom:15px !important;
+	}
+	.form-cta-barometre input[type="submit"]{
+		width:95% !important;
+	}
 }
 
 @media(max-width:767px) {
@@ -416,8 +425,6 @@ ul.banner-social-buttons {
         margin-bottom: 0;
     }
 }
-
-
 
 ::-moz-selection {
     text-shadow: none;
@@ -535,4 +542,25 @@ body {
             #section-3,#section-2{
                 padding:0px !important;
             }
+			
+			
+			
         }
+.form-cta-barometre{
+	background-color:#dddddd;
+	width: 80%;
+	padding: 15px;
+	border: 1px solid #eeefff;
+	display: none;
+}
+.form-cta-barometre input[type="text"]{
+	border: 0;
+	padding:5px;
+}
+.form-cta-barometre input[type="submit"]{
+	border: 0;
+	padding:5px 15px 5px 15px;
+	background-color: #E73635;
+	color:white;
+}
+

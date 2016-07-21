@@ -269,6 +269,7 @@ a:focus {
     font-size: 2vh;
     text-transform: uppercase;
     margin-top: 15px;
+	cursor: pointer;
 }
 
 .btn-circle {
@@ -552,10 +553,30 @@ body {
         	
         }
         @media(max-width:1185px) {
-        	.cta-barometre{
+        	.cta-barometre, .form-cta-barometre{
         		margin-right:37px;
         	}
         }
 .arrow-svg:hover #arrow{
 			fill:#E73635;
 		}
+
+.form-cta-barometre{
+	background-color: #dddddd;
+	display: none;
+	max-width:100%;
+}
+.form-cta-barometre input[type="text"]{
+	margin:15px 15px 0px 15px;
+	border: 0;
+	padding:5px;
+	width:80%;
+}
+.form-cta-barometre input[type="submit"]{
+	margin:15px 15px 15px 15px;
+	border: 0;
+	padding:5px;
+	width:80%;
+	background-color: #E73635;
+	color:white;
+}
