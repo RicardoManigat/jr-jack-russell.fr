@@ -566,7 +566,8 @@ body {
 	display: none;
 	max-width:100%;
 }
-.form-cta-barometre input[type="text"]{
+.form-cta-barometre input[type="email"],
+.form-cta-barometre input[type="tel"]{
 	margin:15px 15px 0px 15px;
 	border: 0;
 	padding:5px;

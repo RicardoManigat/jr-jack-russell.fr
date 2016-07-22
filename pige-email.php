@@ -72,6 +72,7 @@
 			
 			$(".cta-barometre").click(function(){
 				$(".form-cta-barometre").slideToggle();
+				
 			});
 			
 			$(".form-cta-barometre").submit(function(e){
@@ -83,6 +84,7 @@
             $.post( "send.php", { email: email, phone: phone, subject: subject })
               .done(function( data ) {
                 $(".form-cta-barometre").hide();
+				$('.cta-barometre').hide();
                 $("#message").html(data);
                 
               });

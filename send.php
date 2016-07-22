@@ -10,26 +10,26 @@ if(ISSET($_POST['subject'])){
 			$sujet = "Demande d'informations sur la pige email";
 			break;
 	}
-	$jr_mail = "ebarbe@varibase.com";
+	$jr_mail = "ebarbe@varibase.com"; //hello@jack-russell.fr
 	$jr_name = "Jack Russell";
 	$client_mail = $_POST['email'];
 	if(ISSET($_POST['phone'])){
 		$phone = $_POST['phone'];
 	}
 	//EMAIL 1 : FROM JR TO PROSPECT
-	$message_html="Bonjour,<br>";
-	$message_html.="Nous vous remercions pour votre demande d’information.<br>";
+	$message_html="Bonjour,<br><br>";
+	$message_html.="Nous vous remercions pour votre demande d’informations.<br>";
 	$message_html.="Un des membres de l’équipe Jack Russell va prendre contact rapidement avec vous.<br>";
-	$message_html.="A bientôt.<br>";
-	$message_html.="<br><br><br>";
-	$message_html.="Pascal Chirat<br>";
+	$message_html.="A bientôt.";
+	$message_html.="<br><br>";
+	$message_html.="Pascal<br>";
 	$message_html.="Jack Russell<br>";
 	$message_html.="25, Rue d'Hauteville<br>";
 	$message_html.="75010 Paris<br>";
 	$message_html.="+33 (0)1 43 18 01 07<br>";
 	$message_html.="<br><br>";
 	$message_html.="<img src=\"http://jack-russell.fr/img/logo-mail.png\"><br>";
-	$message_html.="Suivez nous sur ";
+	$message_html.="Suivez nous sur :";
 	$message_html.="<a href=\"https://www.facebook.com/AgenceJackRussell/?fref=ts\">Facebook</a>";
 	$message_html.=" et <a href=\"https://twitter.com/creativeemails\">Twitter</a>";
 	$mail = new PHPMailer;
@@ -75,7 +75,7 @@ if(ISSET($_POST['subject'])){
 	if(!$mail2->send()){
 		return $mail->ErrorInfo;
 	}
-	echo "Merci de votre interêt, nous vous recontacterons rapidement";
+	echo "Merci de votre interêt, nous vous recontacterons rapidement.";
 	
 }elseif(filter_var($_POST['email'],FILTER_VALIDATE_EMAIL)){
         $nom=$_POST['nom'];

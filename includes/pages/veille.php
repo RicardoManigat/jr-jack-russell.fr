@@ -41,8 +41,8 @@
 							<div class="cta-barometre">Je souhaite en savoir plus sur la pige</div>
 							<div id="message"></div>
 							<form class="form-cta-barometre" action="#">
-								<input type="text" name="email" placeholder="Votre Courriel" id="form-email">
-								<input type="text" name="phone" placeholder="Votre Téléphone" id="form-phone">
+								<input type="email" name="email" placeholder="votre email" id="form-email" required>
+								<input type="tel" name="phone" placeholder="votre téléphone (optionnel)" id="form-phone">
 								<input type="hidden" name="subject" value="pige">
 								<input type="submit" value="ENVOYER">
 							</form>

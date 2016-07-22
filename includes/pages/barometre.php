@@ -112,8 +112,8 @@
                     <div class="col-sm-12">
 						<center>
 								<form class="form-cta-barometre">
-									<input type="text" name="email" placeholder="Votre Email" id="form-email">
-									<input type="text" name="phone" placeholder="Votre Téléphone" id="form-phone">
+									<input type="email" name="email" placeholder="votre email" id="form-email" required>
+									<input type="tel" name="phone" placeholder="votre téléphone (optionnel)" id="form-phone">
 									<input type="hidden" name="subject" value="barometre">
 									<input type="submit" value="ENVOYER"> 
 								</form>
