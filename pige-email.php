@@ -84,9 +84,7 @@
             $.post( "send.php", { email: email, phone: phone, subject: subject })
               .done(function( data ) {
                 $(".form-cta-barometre").hide();
-				$('.cta-barometre').hide();
                 $("#message").html(data);
-                
               });
         });
         });

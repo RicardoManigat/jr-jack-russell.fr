@@ -4,13 +4,13 @@
 if(ISSET($_POST['subject'])){
 	switch($_POST['subject']){
 		case 'barometre':
-			$sujet = "Demande d'informations sur le barometre email";
+			$sujet = "Demande d'informations sur le baromètre email";
 			break;
 		case 'pige':
 			$sujet = "Demande d'informations sur la pige email";
 			break;
 	}
-	$jr_mail = "ebarbe@varibase.com"; //hello@jack-russell.fr
+	$jr_mail = "hello@jack-russell.fr"; //hello@jack-russell.fr
 	$jr_name = "Jack Russell";
 	$client_mail = $_POST['email'];
 	if(ISSET($_POST['phone'])){
@@ -19,8 +19,8 @@ if(ISSET($_POST['subject'])){
 	//EMAIL 1 : FROM JR TO PROSPECT
 	$message_html="Bonjour,<br><br>";
 	$message_html.="Nous vous remercions pour votre demande d’informations.<br>";
-	$message_html.="Un des membres de l’équipe Jack Russell va prendre contact rapidement avec vous.<br>";
-	$message_html.="A bientôt.";
+	$message_html.="Un des membres de l’équipe Jack Russell va prendre contact rapidement avec vous.<br><br>";
+	$message_html.="À bientôt.";
 	$message_html.="<br><br>";
 	$message_html.="Pascal<br>";
 	$message_html.="Jack Russell<br>";
@@ -59,7 +59,7 @@ if(ISSET($_POST['subject'])){
 	}
 	
 	$mail2 = new PHPMailer;
-	$mail->CharSet = 'utf-8';
+	$mail2->CharSet = 'utf-8';
 	$mail2->isSMTP();
 	$mail2->Host = "customers-pop-proxy.oxymium.net";
 	$mail2->SMTPAuth=true;
@@ -75,7 +75,7 @@ if(ISSET($_POST['subject'])){
 	if(!$mail2->send()){
 		return $mail->ErrorInfo;
 	}
-	echo "Merci de votre interêt, nous vous recontacterons rapidement.";
+	echo "Merci de votre intérêt, nous vous recontacterons rapidement.";
 	
 }elseif(filter_var($_POST['email'],FILTER_VALIDATE_EMAIL)){
         $nom=$_POST['nom'];

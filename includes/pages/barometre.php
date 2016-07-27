@@ -46,7 +46,7 @@
 	            	<p class="data-vis"><br><i>30</i><br>Questions</p>
 	        	</div>
 	            <div class="col-lg-8">
-	            	<p class="muted-text">Médiamétrie, créée en 1985, est une entreprise spécialisée dans la mesure d'audience et les études marketing des médias audiovisuels et interactifs en France. Elle observe, mesure et analyse les comportements du public et les tendances du marché des médias et de la communication. Elle est notamment connue pour sa marque Audimat, dont le nom est devenu un mot du langage courant.</p>
+	            	<p class="description">Médiamétrie, créée en 1985, est une entreprise spécialisée dans la mesure d'audience et les études marketing des médias audiovisuels et interactifs en France. Elle observe, mesure et analyse les comportements du public et les tendances du marché des médias et de la communication. Elle est notamment connue pour sa marque Audimat, dont le nom est devenu un mot du langage courant.</p>
 	        	</div>
             </div></div>
         </div>
@@ -113,7 +113,7 @@
 						<center>
 								<form class="form-cta-barometre">
 									<input type="email" name="email" placeholder="votre email" id="form-email" required>
-									<input type="tel" name="phone" placeholder="votre téléphone (optionnel)" id="form-phone">
+									<input type="tel" name="phone" placeholder="téléphone (optionnel)" id="form-phone">
 									<input type="hidden" name="subject" value="barometre">
 									<input type="submit" value="ENVOYER"> 
 								</form>

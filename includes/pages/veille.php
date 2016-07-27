@@ -42,7 +42,7 @@
 							<div id="message"></div>
 							<form class="form-cta-barometre" action="#">
 								<input type="email" name="email" placeholder="votre email" id="form-email" required>
-								<input type="tel" name="phone" placeholder="votre téléphone (optionnel)" id="form-phone">
+								<input type="tel" name="phone" placeholder="téléphone (optionnel)" id="form-phone">
 								<input type="hidden" name="subject" value="pige">
 								<input type="submit" value="ENVOYER">
 							</form>
