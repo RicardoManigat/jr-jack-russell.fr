@@ -177,7 +177,7 @@
             <div class="col-sm-4 grid grid-image" id="grid9">
                 <div class="grid-child">
                     <p class="title">D&Eacute;COUVREZ<br>NOS R&Eacute;F&Eacute;RENCES</p>
-                    <div class="intro">D&eacute;couvrez nos principaux clients &agrave; Montr&eacute;al et nos 1<sup>ers</sup> clients en France.
+                    <div class="intro">D&eacute;couvrez nos principales r&eacute;f&eacute;rences &agrave; Montr&eacute;al et nos 1<sup>ers</sup> clients en France.
                     <center><a href="#grid-caption9" class="modal9"><div id="grid9plus" class="plus"></div></a></center>
                     </div>
                 </div>

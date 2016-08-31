@@ -165,6 +165,11 @@ body{
 	text-align:center;
 	width:100%;
 }
+.intro sup{
+	font-size:10px;
+	vertical-align: super;
+	
+}
 .carousel{
 }
 .plus{

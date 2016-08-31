@@ -52,7 +52,7 @@
                             <div class="email-description">
                             	<h5>CANADA</h5>
                                 <h3>Pr&eacute;senter la nouvelle g&eacute;n&eacute;ration de terminal illico de Vid&eacute;otron</h3>
-                                <p><span>Le gif personnalis&eacute;.</span> Un <?php echo EMAIL_SING_MIN; ?> personnalis&eacute; en fonction du profil de la client&egrave;le, soit illico 1 ou illico 2. La ligne et tout le contenu pr&eacute;sentent les avantages du nouveau terminal illico 2 compar&eacute; &agrave; l&apos;ancien. <?php echo LEMAIL_SING_FMAJ; ?> dirige vers une page de destination personnalis&eacute;e pr&eacute;sentant toutes les nouvelles fonctionnalit&eacute;s du terminal.</p>
+                                <p><span>Le gif personnalis&eacute;.</span> Un <?php echo EMAIL_SING_MIN; ?> personnalis&eacute; en fonction du profil de la client&egrave;le. La ligne et tout le contenu pr&eacute;sentent les avantages du nouveau terminal compar&eacute; &agrave; l&apos;ancien. <?php echo LEMAIL_SING_FMAJ; ?> dirige vers une page de destination personnalis&eacute;e pr&eacute;sentant toutes les nouvelles fonctionnalit&eacute;s du terminal.</p>
                             </div>
                         </div>
                         <div class="col-md-6 col-center col-xs-12 col-lg-4 col-lg-pull-4 col-md-pull-6">
