@@ -1,0 +1,599 @@
+<?php
+
+		function connectMySQL($host,$login,$password,$dbname){
+			$sql=new mysqli();
+			$sql->init();
+			$sql->real_connect($host,$login,$password,$dbname);
+			return $sql;
+		}
+
+		function queryMySQL($sql,$query){
+			$result = $sql->query($query);
+			return $result;
+		}
+
+		$connect = connectMySQL('localhost','jack_russell','18631492$','jr_petitdejeuner2017');
+		$connect->set_charset("utf-8");
+		$req_events = "SELECT * FROM evenements WHERE date > NOW()";
+		$res_events = queryMySQL($connect,$req_events);
+?>
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta http-equiv="Content-language" content="fr">
+	
+	<title>P'titdej - Jack Russell</title>
+	
+	<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height" />
+	
+	<!-- SCRIPT API  -->
+	<script type="text/javascript" src="assets/js/core/modernizr.js"></script>
+	<script type="text/javascript" src="assets/js/core/mootools.js"></script>
+	<script type="text/javascript" src="assets/js/duche/dui-utils.js"></script>
+	<script type="text/javascript" src="assets/js/duche/dui-box.js"></script>
+	<link rel="stylesheet" property="stylesheet" href="assets/js/simple-modal/assets/css/simplemodal.css">
+	<script type="text/javascript" src="assets/js/simple-modal/simple-modal.js"></script>
+	
+    <!-- lib graphics : http://mootools.net/ MORE-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,700" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	
+	<!-- CSS STANDARD -->
+	<link rel="stylesheet" href="assets/css/reset.css">
+
+	<style type="text/css" media="screen">
+		
+		/* ---------------- */
+		*, *::before, *::after {
+		  box-sizing: inherit;
+		}
+		html {
+		  box-sizing: border-box;
+		}
+		/* ---------------- */
+
+		/* ---------------- */
+		html{
+			height: 100%;
+		}
+		body{
+			height: 100%;
+			font-family: "Roboto", arial , sans-serif;
+			margin:0;
+			padding:0;
+		}
+		/* ---------------- */
+		
+		/* SIMPLE MODAL normalize */
+		.simple-modal
+		{
+			border-radius: 0px !important;
+		}
+		.simple-modal .simple-modal-footer
+		{
+			border-radius: 0px !important;
+		}
+	
+		body.acm-body
+		{
+			background-color: #ececec;
+		}
+		
+		header.acm-header
+		{
+			background-color: black;
+			width: 100%;
+			height: 90px;
+		}
+		
+		section.acm-content
+		{
+			width: 100%;
+			max-width: 840px;
+			min-height: calc(100vh - 220px);
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: 20px;
+			margin-bottom: 20px;
+			font-family: Roboto,sans-serif;
+		    font-size: 18px;
+		    font-weight: 300;
+		}
+		
+		section.acm-content h1.acm-titre
+		{
+			text-transform: uppercase;
+			font-family: Montserrat;
+			font-size: 35px;
+			font-weight: bolder;
+			line-height: 28px;
+			margin-top: 15px;
+			margin-left: 50px;
+			transition: text-align 0.3s ease-in-out, font-size 0.3s ease-in-out;
+		}
+		@media all and (max-width: 810px)
+		{
+			section.acm-content h1.acm-titre
+			{
+				margin-left: 0px;
+				font-size: 26px;
+				text-align: center;
+			}
+		}
+		
+		section.acm-content div.left_content
+		{
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: center;
+			align-items: stretch;
+		}
+		
+		section.acm-content div.left_content div.feat_prod_box_contact
+		{
+			max-width: 380px;
+			min-height: 415px;
+			width: 100%;
+			background-color: black;
+			color: white;
+			font-size: 12px;
+			padding: 15px;
+			
+			background-image: url('./images/feat_prod_box_contact.jpg');
+			background-position: center bottom;
+		    background-repeat: no-repeat;
+			background-size: cover;
+		}
+		
+		section.acm-content div.left_content div.feat_prod_box_contact p
+		{
+			line-height: 16px;
+		}
+		
+		section.acm-content div.left_content div.feat_prod_box_contact a
+		{
+			color: white;
+			text-decoration: underline;
+			transition: text-decoration 0.3s ease-in-out;
+		}
+		section.acm-content div.left_content div.feat_prod_box_contact a:hover
+		{
+			
+		}
+		
+		section.acm-content div.left_content div.feat_prod_box_details
+		{
+			max-width: 380px;
+			width: 100%;
+			background-color: white;
+			color: black;
+			font-size: 12px;
+			padding: 15px;
+			
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		@media all and (max-width: 810px)
+		{
+			section.acm-content div.left_content div.feat_prod_box_details
+			{
+				display: block;
+			}
+		}
+				
+		section.acm-content div.left_content div.feat_prod_box_details div.form_titre
+		{
+			color: #e73635;
+		    font-family: Montserrat;
+		    font-size: 20px;
+			text-transform: uppercase;
+		    font-weight: bolder;
+		    text-align: center;
+		}		
+		
+		section.acm-content div.left_content div.feat_prod_box_details div.form_row
+		{
+			text-align: center;
+			margin-top: 10px;
+			margin-bottom: 10px;
+		}
+		
+		section.acm-content div.left_content div.feat_prod_box_details div.form_row label
+		{
+			display: none;
+		}
+		
+		section.acm-content div.left_content div.feat_prod_box_details div.form_row input
+		{
+			width: 100%;
+			max-width: 200px;
+			padding: 3px;
+			border: 1px solid #999999;
+		}
+		
+		section.acm-content div.left_content div.feat_prod_box_details div.form_row p.ContentTxtDate
+		{
+			width: 100%;
+			max-width: 200px;
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: 15px;
+			margin-bottom: 0px;
+			text-align: left;
+		}
+		
+		section.acm-content div.left_content div.feat_prod_box_details div.form_row p#ContentTxtDate
+		{
+			margin-top: 0px;
+		}
+		
+		section.acm-content div.left_content div.feat_prod_box_details div.form_row p#ContentTxtDate select
+		{
+			width: 100%;
+			max-width: 200px;
+		}
+		
+		section.acm-content div.left_content div.feat_prod_box_details p.lieu1
+		{
+			width: 100%;
+			max-width: 200px;
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: 15px;
+			margin-bottom: 0px;
+			text-align: left;
+			line-height: 16px;
+			font-weight: bolder;
+		}
+		
+		section.acm-content div.left_content div.feat_prod_box_details p.lieu2
+		{
+			width: 100%;
+			max-width: 200px;
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: 5px;
+			margin-bottom: 0px;
+			text-align: left;
+			line-height: 16px;
+		}
+		
+		section.acm-content div.left_content div.feat_prod_box_details p.lieu2 a
+		{
+			color: #ff0000;
+			text-decoration: underline;
+			transition: text-decoration 0.3s ease-in-out;
+		}
+		section.acm-content div.left_content div.feat_prod_box_details p.lieu2 a:hover
+		{
+			
+		}
+				
+		section.acm-content div.left_content div.feat_prod_box_details div.form_row button[type="submit"]
+		{
+			background-color: #e73635;
+		    border: medium none;
+		    color: white;
+		    font-family: Montserrat;
+		    font-weight: bolder;
+		    height: 25px;
+		    line-height: 20px;
+		    padding: 0;
+		    width: 100%;
+			max-width: 200px;
+			
+			transition: text-decoration 0.3s ease-in-out;
+		}
+		
+		section.acm-content div.left_content div.feat_prod_box_details div.form_row button[type="submit"]:hover
+		{
+			text-decoration: underline;
+		}
+		
+		section.acm-content div.left_content div.feat_prod_box_save
+		{
+			max-width: 380px;
+			width: 100%;
+			background-color: white;
+			color: black;
+			font-size: 12px;
+			padding: 15px;
+			
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		@media all and (max-width: 810px)
+		{
+			section.acm-content div.left_content div.feat_prod_box_save
+			{
+				display: block;
+			}
+		}
+		
+		section.acm-content div.left_content div.feat_prod_box_save div.form_titre
+		{
+			color: #e73635;
+		    font-family: Montserrat;
+			text-transform: uppercase;
+		    font-size: 20px;
+		    font-weight: bolder;
+		    text-align: center;
+		}
+		
+		section.acm-content div.left_content div.feat_prod_box_save div.form_row
+		{
+			text-align: center;
+			margin-top: 10px;
+			margin-bottom: 10px;
+		}
+		
+		section.acm-content div.left_content div.feat_prod_box_save p.info1
+		{
+			color: #ff0000;
+			margin-top: 50px;
+			font-weight: bolder;
+		}
+		@media all and (max-width: 810px)
+		{
+			section.acm-content div.left_content div.feat_prod_box_save p.info1
+			{
+				margin-top: 10px;
+			}
+		}
+		
+		section.acm-content div.left_content div.feat_prod_box_save p.retour1
+		{
+			margin-top: 50px;
+		}
+		@media all and (max-width: 810px)
+		{
+			section.acm-content div.left_content div.feat_prod_box_save p.retour1
+			{
+				margin-top: 10px;
+			}
+		}
+		
+		section.acm-content div.left_content div.feat_prod_box_save p.retour1 a
+		{
+			color: #ff0000;
+			text-decoration: underline;
+			transition: text-decoration 0.3s ease-in-out;
+		}
+		section.acm-content div.left_content div.feat_prod_box_save p.retour1 a:hover
+		{
+			
+		}
+		
+		footer.acm-footer
+		{
+			background-color: black;
+			width: 100%;
+			height: 90px;
+		}
+	</style>
+
+    <script type="text/javascript">
+        
+		function fnSubmit() {
+            if (($("idNom").get("value").trim() == "") || ($("idPrenom").get("value").trim() == "") || ($("idSociete").get("value").trim() == "") || ($("txtDate").get("value").trim() == "")) {
+                //alert("merci de remplir tous les champs");
+				$DUIbox.alert("Merci de remplir tous les champs", {
+					"title": "Formulaire d'inscription"
+				});
+            }
+            else if (ValidateEmail($("idMail").get("value").trim()) == false) {
+                //alert("Adresse email non valide");
+				$DUIbox.alert("Adresse email non valide", {
+					"title": "Formulaire d'inscription"
+				});
+            }
+            else if (ValidatePhone($("idTel").get("value").trim()) == false) {
+                //alert("Numéro de téléphone non valide");
+				$DUIbox.alert("Numéro de téléphone non valide", {
+					"title": "Formulaire d'inscription"
+				});
+            }
+
+            else {
+                form1.submit();
+            }
+        }
+
+        function ValidatePhone(str_phone) {
+
+            var nombre = str_phone;
+            var chiffres = new String(nombre);
+
+            // Enlever tous les charactères sauf les chiffres
+            chiffres = chiffres.replace(/[^0-9]/g, '');
+
+            // Le champs est vide
+            if (nombre == "") {
+                return false;
+            }
+
+            // Nombre de chiffres
+            compteur = chiffres.length;
+
+            if (compteur != 10) {
+                return false;
+            }
+
+            else {
+                return true;
+            }
+
+        }
+
+        function ValidateEmail(mail) {
+            if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(mail)) {
+                return (true)
+            }
+            return (false)
+        } 
+
+    </script>
+</head>
+
+<body class="acm-body">
+<main class="acm-main">
+    <header class="acm-header">
+        <a href="http://jack-russell.fr/" style="display: block; height: 100%; text-align: left;">
+                <svg width="200" xml:space="preserve" enable-background="new 0 0 120.5 51.2" viewBox="0 0 120.5 51.2" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" id="logo_white" version="1.1">
+                    <path d="M61.3,26.3v-4.3H63v4.2c0,1.2,0.6,1.8,1.6,1.8c1,0,1.6-0.6,1.6-1.8v-4.3h1.6v4.2c0,2.3-1.3,3.4-3.3,3.4
+                        C62.5,29.7,61.3,28.5,61.3,26.3z" fill="#FFFFFF"/>
+                    <path d="M69.5,28.4l1-1.2c0.7,0.6,1.4,0.9,2.2,0.9c0.7,0,1.1-0.3,1.1-0.7v0c0-0.4-0.3-0.6-1.5-1
+                        c-1.5-0.4-2.5-0.8-2.5-2.3v0c0-1.4,1.1-2.3,2.6-2.3c1.1,0,2,0.3,2.8,1l-0.9,1.2c-0.7-0.5-1.3-0.7-1.9-0.7s-1,0.3-1,0.7v0
+                        c0,0.5,0.3,0.7,1.6,1c1.5,0.4,2.4,0.9,2.4,2.2v0c0,1.5-1.1,2.3-2.7,2.3C71.6,29.6,70.4,29.2,69.5,28.4z" fill="#FFFFFF"/>
+                    <path d="M76.8,28.4l1-1.2c0.7,0.6,1.4,0.9,2.2,0.9c0.7,0,1.1-0.3,1.1-0.7v0c0-0.4-0.3-0.6-1.5-1
+                        c-1.5-0.4-2.5-0.8-2.5-2.3v0c0-1.4,1.1-2.3,2.6-2.3c1.1,0,2,0.3,2.8,1l-0.9,1.2c-0.7-0.5-1.3-0.7-1.9-0.7c-0.6,0-1,0.3-1,0.7v0
+                        c0,0.5,0.3,0.7,1.6,1c1.5,0.4,2.4,0.9,2.4,2.2v0c0,1.5-1.1,2.3-2.7,2.3C78.8,29.6,77.7,29.2,76.8,28.4z" fill="#FFFFFF"/>
+                    <path d="M84.7,22.1h5.6v1.5h-4V25h3.5v1.5h-3.5v1.6h4.1v1.5h-5.7V22.1z" fill="#FFFFFF"/>
+                    <path d="M92.4,22.1H94v6h3.7v1.5h-5.4V22.1z" fill="#FFFFFF"/>
+                    <path d="M99.5,22.1h1.6v6h3.7v1.5h-5.4V22.1z" fill="#FFFFFF"/>
+                    <path d="M57.8,26.9c1-0.4,1.6-1.1,1.6-2.3v0c0-0.7-0.2-1.3-0.6-1.7c-0.5-0.5-1.2-0.8-2.2-0.8h-3.4v7.5h1.6v-6h1.6
+                        c0.8,0,1.3,0.4,1.3,1.1v0c0,0.6-0.5,1.1-1.3,1.1h-1.3l2.6,3.8h1.9L57.8,26.9z" fill="#FFFFFF"/>
+                    <path d="M33.6,8c-10-0.2-18.2,8-18,18c0.2,9.4,7.9,17.1,17.3,17.3c10,0.2,18.2-8,18-18C50.7,15.8,43,8.1,33.6,8z" fill="#FFFFFF"/>
+                    <path d="M22.2,26.9c0,0.9-0.3,1.5-0.7,2c-0.5,0.5-1.1,0.7-1.9,0.7c-1.2,0-1.9-0.5-2.4-1.1l1-1.2
+                        c0.4,0.5,0.8,0.7,1.4,0.7c0.6,0,1-0.4,1-1.2v-4.8h1.7V26.9z" fill="#010202"/>
+                    <polygon points="29.7,29.5 27.5,24 25.2,29.5 23.5,29.5 26.7,22 28.3,22 31.5,29.5 " fill="#010202"/>
+                    <path d="M36.2,29.7c-2.2,0-3.8-1.7-3.8-3.8v0c0-2.1,1.6-3.9,3.9-3.9c1.4,0,2.3,0.5,2.9,1.2l-1,1.2
+                        c-0.6-0.5-1.2-0.8-1.9-0.8c-1.3,0-2.2,1-2.2,2.3v0.1c0,1.3,1,2.3,2.3,2.3c0.8,0,1.3-0.4,1.9-0.9l1,1.1
+                        C38.5,29.1,37.6,29.7,36.2,29.7z" fill="#010202"/>
+                    <polygon points="42.7,25.2 42.7,25.3 42.7,29.5 41.1,29.5 41.1,22.1 42.7,22.1 " fill="#010202"/>
+                    <polygon points="42.8,25.3 45.8,22.1 47.8,22.1 44.7,25.2 47.9,29.5 45.9,29.5 " fill="#010202"/>
+                </svg>
+            </a>
+    </header>
+	
+	<section class="acm-content">	
+		<h1 class="acm-titre">Les petits déjeuners<br/>de l'email</h1>
+	    <form id="form1" action="save_petitdej.php" method="post">
+		    <div class="left_content">
+		        
+		        <div class="feat_prod_box_contact">
+		            <p class="feat_prod_box_contact1">
+		                Nous vous invitons à découvrir notre méthodologie unique au cours d'un petit-déjeuner
+		                de présentation individuelle de notre algorithme les mardis et jeudis à <b>9h00 au Café
+		                    des Initiés à Paris.</b>
+		            </p>
+		            <p class="feat_prod_box_contact2">
+		                <b>Pour plus d'informations</b>, contactez-nous au 01 43 18 01 07
+		                <br />
+		                ou par mail : <a href="mailto:hello@jack-russell.fr">hello@jack-russell.fr</a>
+		            </p>
+		        </div>
+				<?php if(ISSET($_GET['inscription'])){ ?>
+					<div class="feat_prod_box_details">
+						<div class="contact_form">
+							<div class="contact_form1">
+								<div class="form_titre">
+									Merci!
+								</div>
+								<div class="form_row">
+									Votre inscription à bien été prise en compte.
+								</div>
+							</div>
+						</div>
+					</div>
+		        <?php }else{ ?>
+					<div class="feat_prod_box_details">
+		            <div class="contact_form">
+		                <div class="contact_form1">
+		                    <div class="form_titre">
+		                        Inscription
+		                    </div>
+		                    <div class="form_row">
+		                        <label class="contact">
+		                            <strong>Nom:</strong></label>
+		                        <input type="text" class="contact_input" id="idNom" name="idNom" alt="Nom" placeholder="Nom" />
+		                    </div>
+		                    <div class="form_row">
+		                        <label class="contact">
+		                            <strong>Prénom:</strong></label>
+		                        <input type="text" class="contact_input" id="idPrenom" name="idPrenom" alt="Prénom"
+		                            placeholder="Prénom" />
+		                    </div>
+		                    <div class="form_row">
+		                        <label class="contact">
+		                            <strong>Email:</strong></label>
+		                        <input type="text" class="contact_input" id="idMail" name="idMail" alt="Email" placeholder="Email" />
+		                    </div>
+		                    <div class="form_row">
+		                        <label class="contact">
+		                            <strong>Société :</strong></label>
+		                        <input type="text" class="contact_input" id="idSociete" name="idSociete" alt="Société"
+		                            placeholder="Société" />
+		                    </div>
+		                    <div class="form_row">
+		                        <label class="contact">
+		                            <strong>Numéro de téléphone :</strong></label>
+		                        <input type="text" class="contact_input" id="idTel" name="idTel" alt="Numéro de téléphone"
+		                            placeholder="Numéro de téléphone" />
+		                    </div>
+		                    <div class="form_row">
+		                        <p class="ContentTxtDate">Choisissez votre date</p>
+		                        <p id="ContentTxtDate"  >
+		                            <select name="txtDate" id="txtDate">
+										<?php while($row=mysqli_fetch_array($res_events)){ ?>
+		                                <option value=<?php echo "\"".$row['date']."\""; ?> ><?php echo $row['label']; ?></option>
+										<?php } ?>
+		                            </select>
+		                        </p>
+		                    </div>
+		                    <p class="lieu1">
+		                        <b>Les petits déjeuners se déroulent au Café des Initiés, 3 place des Deux &#201;cus,
+		                            75001 Paris</b></p>
+		                    <p class="lieu2">
+		                        <a class="lieu" href="https://www.google.fr/maps/place/Cafe+des+Inities/@48.8628216,2.3413571,15z/data=!4m5!3m4!1s0x0:0x36aac3bf6b3826d0!8m2!3d48.8628216!4d2.3413571"
+		                            target="_blank">Voir sur la carte</a>
+		                    </p>
+		                    <div class="form_row">
+		                        <button type="submit">
+		                            VALIDEZ L'INSCRIPTION</button>
+		                    </div>
+		                </div>
+		            </div>
+		        </div>
+				<?php } ?>
+		    </div>
+	    </form>
+	</section>
+	
+    <footer class="acm-footer">
+        <a href="http://jack-russell.fr/" style="display: block; height: 100%; text-align: left;">
+                <svg width="200" xml:space="preserve" enable-background="new 0 0 120.5 51.2" viewBox="0 0 120.5 51.2" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" id="logo_white" version="1.1">
+                    <path d="M61.3,26.3v-4.3H63v4.2c0,1.2,0.6,1.8,1.6,1.8c1,0,1.6-0.6,1.6-1.8v-4.3h1.6v4.2c0,2.3-1.3,3.4-3.3,3.4
+                        C62.5,29.7,61.3,28.5,61.3,26.3z" fill="#FFFFFF"/>
+                    <path d="M69.5,28.4l1-1.2c0.7,0.6,1.4,0.9,2.2,0.9c0.7,0,1.1-0.3,1.1-0.7v0c0-0.4-0.3-0.6-1.5-1
+                        c-1.5-0.4-2.5-0.8-2.5-2.3v0c0-1.4,1.1-2.3,2.6-2.3c1.1,0,2,0.3,2.8,1l-0.9,1.2c-0.7-0.5-1.3-0.7-1.9-0.7s-1,0.3-1,0.7v0
+                        c0,0.5,0.3,0.7,1.6,1c1.5,0.4,2.4,0.9,2.4,2.2v0c0,1.5-1.1,2.3-2.7,2.3C71.6,29.6,70.4,29.2,69.5,28.4z" fill="#FFFFFF"/>
+                    <path d="M76.8,28.4l1-1.2c0.7,0.6,1.4,0.9,2.2,0.9c0.7,0,1.1-0.3,1.1-0.7v0c0-0.4-0.3-0.6-1.5-1
+                        c-1.5-0.4-2.5-0.8-2.5-2.3v0c0-1.4,1.1-2.3,2.6-2.3c1.1,0,2,0.3,2.8,1l-0.9,1.2c-0.7-0.5-1.3-0.7-1.9-0.7c-0.6,0-1,0.3-1,0.7v0
+                        c0,0.5,0.3,0.7,1.6,1c1.5,0.4,2.4,0.9,2.4,2.2v0c0,1.5-1.1,2.3-2.7,2.3C78.8,29.6,77.7,29.2,76.8,28.4z" fill="#FFFFFF"/>
+                    <path d="M84.7,22.1h5.6v1.5h-4V25h3.5v1.5h-3.5v1.6h4.1v1.5h-5.7V22.1z" fill="#FFFFFF"/>
+                    <path d="M92.4,22.1H94v6h3.7v1.5h-5.4V22.1z" fill="#FFFFFF"/>
+                    <path d="M99.5,22.1h1.6v6h3.7v1.5h-5.4V22.1z" fill="#FFFFFF"/>
+                    <path d="M57.8,26.9c1-0.4,1.6-1.1,1.6-2.3v0c0-0.7-0.2-1.3-0.6-1.7c-0.5-0.5-1.2-0.8-2.2-0.8h-3.4v7.5h1.6v-6h1.6
+                        c0.8,0,1.3,0.4,1.3,1.1v0c0,0.6-0.5,1.1-1.3,1.1h-1.3l2.6,3.8h1.9L57.8,26.9z" fill="#FFFFFF"/>
+                    <path d="M33.6,8c-10-0.2-18.2,8-18,18c0.2,9.4,7.9,17.1,17.3,17.3c10,0.2,18.2-8,18-18C50.7,15.8,43,8.1,33.6,8z" fill="#FFFFFF"/>
+                    <path d="M22.2,26.9c0,0.9-0.3,1.5-0.7,2c-0.5,0.5-1.1,0.7-1.9,0.7c-1.2,0-1.9-0.5-2.4-1.1l1-1.2
+                        c0.4,0.5,0.8,0.7,1.4,0.7c0.6,0,1-0.4,1-1.2v-4.8h1.7V26.9z" fill="#010202"/>
+                    <polygon points="29.7,29.5 27.5,24 25.2,29.5 23.5,29.5 26.7,22 28.3,22 31.5,29.5 " fill="#010202"/>
+                    <path d="M36.2,29.7c-2.2,0-3.8-1.7-3.8-3.8v0c0-2.1,1.6-3.9,3.9-3.9c1.4,0,2.3,0.5,2.9,1.2l-1,1.2
+                        c-0.6-0.5-1.2-0.8-1.9-0.8c-1.3,0-2.2,1-2.2,2.3v0.1c0,1.3,1,2.3,2.3,2.3c0.8,0,1.3-0.4,1.9-0.9l1,1.1
+                        C38.5,29.1,37.6,29.7,36.2,29.7z" fill="#010202"/>
+                    <polygon points="42.7,25.2 42.7,25.3 42.7,29.5 41.1,29.5 41.1,22.1 42.7,22.1 " fill="#010202"/>
+                    <polygon points="42.8,25.3 45.8,22.1 47.8,22.1 44.7,25.2 47.9,29.5 45.9,29.5 " fill="#010202"/>
+                </svg>
+            </a>
+    </footer>
+
+</main>
+</body>
+</html>

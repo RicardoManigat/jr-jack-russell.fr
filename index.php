@@ -6,10 +6,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Agence de communications franco-canadienne spécialiste de campagnes emailing créatif et performantes qui traite l'email marketing comme un média">
+    <meta name="description" content="Start-up franco-canadienne, spécialisée dans les campagnes d’email marketing, structurée autour d’une agence, d’un département études et d’une plateforme de pige sectorielle.">
     <meta name="keywords" content="agence, emailing creatif, email, marketing, média">
     <meta name="author" content="">
-    <title>Jack Russell : Agence d'emails marketing créatifs</title>
+    <title>Jack Russell : Agence spécialisée en email marketing</title>
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic' rel='stylesheet' type='text/css'>
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
