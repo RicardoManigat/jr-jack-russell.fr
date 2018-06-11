@@ -1,0 +1,107 @@
+#wrapper{
+    background:#f0f0f0 !important;
+}
+.col-black{
+    background-color: black;
+    color: white;
+    min-height: 382px !important;
+}
+
+.col-white{
+    background-color: white;
+    color: black;
+}
+.form-input{
+    width:90%;
+    margin-top:15px;
+    border: 2px solid black;
+    padding:7px;
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    color:black;
+    
+}
+
+.form-contact{
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+::-webkit-input-placeholder {
+   color: black;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: black;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: black;  
+}
+
+:-ms-input-placeholder {  
+   color: black;  
+}
+
+.jr-button{
+    padding: 10px 25px 10px 25px;
+    background: #E73635;
+    border: none;
+    color: white;
+    font-weight: 500;
+    position: relative;
+    left:35%;
+}
+
+textarea{
+    resize: vertical;
+}
+
+.content{
+    margin-bottom:100px;
+}
+
+.agence-detail{
+    margin-top: 40px;
+}
+
+.agence-detail h3{
+    font-family: JackRussellBlack,sans-serif;
+}
+
+p.address,
+p.subtext{
+    font-family: Roboto, sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+}
+
+.sent{
+    margin-top: 25px;
+    font-size:
+}
+.division{
+    display: none;
+}
+
+@media only screen and (max-width: 768px) {
+    .agence-detail:first-child{
+        padding-top: 25px !important;
+    }
+    #form-content{
+        height: auto !important;
+        text-align: center !important;
+    }
+    .jr-button{
+        margin-right: 0px !important;
+        margin-top: 15px !important;
+        left:0% !important;
+    }
+}
+
+.address{
+    margin-bottom: 10px !important;
+}
+.address:last-child{
+    margin-bottom: 25px !important;
+}
